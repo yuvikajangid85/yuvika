@@ -3,2879 +3,726 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yuvika Jangid | B.Tech Innovator & Founder of ThriftLoop (JECRC College Jaipur)</title>
-  <meta name="description" content="Portfolio of Yuvika Jangid, B.Tech student at JECRC College Jaipur. Creator of ThriftLoop – the campus-only resale, swap, and rental ecosystem.">
+  <title>Shweta | B.Tech Innovator & Overhead Tank Robotics</title>
+  <meta name="description" content="Portfolio of Shweta - B.Tech 1st Year at JECRC University. Creator of Autonomous Overhead Water Tank Cleaning Robot. Shinchan Themed Tech Portfolio.">
   
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-  
-  <!-- FontAwesome Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
   
   <!-- Stylesheet -->
-  <!-- Stylesheet Links (Explicit Relative Path for Host & CDN Compatibility) -->
-  <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- Production Embedded Pikachu Theme Styles (Prevents FOUC & Vercel 404 MIME-type drops) -->
-  <style id="pikachu-theme-production">
-/* ==========================================================================
-   Yuvika Jangid Portfolio & ThriftLoop Showcase
-   Theme: Pikachu Light Yellow (#FFE600 / #FFF38A) & Deep Obsidian Black (#0C0C0F)
-   ========================================================================== */
-
-:root {
-  --pika-yellow: #FFE600;
-  --pika-yellow-light: #FFF475;
-  --pika-yellow-subtle: #FFFBE6;
-  --pika-yellow-glow: rgba(255, 230, 0, 0.28);
-  --pika-yellow-deep: #E5CD00;
-  --pika-cheek: #FF4757;
-  --pika-cheek-glow: rgba(255, 71, 87, 0.35);
-  --eco-green: #10B981;
-  --eco-green-glow: rgba(16, 185, 129, 0.25);
-
-  --bg-black: #0B0B0E;
-  --bg-surface: #131318;
-  --bg-surface-elevated: #1B1B22;
-  --bg-surface-hover: #22222B;
-  
-  --border-subtle: rgba(255, 230, 0, 0.12);
-  --border-active: rgba(255, 230, 0, 0.4);
-  --border-glass: rgba(255, 255, 255, 0.08);
-
-  --text-main: #FFFFFF;
-  --text-muted: #9E9EA8;
-  --text-dim: #6E6E7A;
-  --text-dark: #0F0F12;
-
-  --font-main: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-  --font-mono: 'Space Grotesk', monospace;
-  --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 22px;
-  --radius-full: 9999px;
-  
-  --shadow-glow: 0 0 25px var(--pika-yellow-glow);
-  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.45);
-  --transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-/* Base Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-  font-size: 16px;
-}
-
-body {
-  font-family: var(--font-main);
-  background-color: var(--bg-black);
-  color: var(--text-main);
-  line-height: 1.6;
-  overflow-x: hidden;
-  position: relative;
-  -webkit-font-smoothing: antialiased;
-}
-
-/* Ambient Pikachu Glowing Auras */
-.ambient-glow {
-  position: fixed;
-  width: 650px;
-  height: 650px;
-  border-radius: 50%;
-  pointer-events: none;
-  z-index: 0;
-  filter: blur(120px);
-  opacity: 0.16;
-}
-
-.glow-top {
-  top: -150px;
-  right: -100px;
-  background: radial-gradient(circle, var(--pika-yellow) 0%, transparent 70%);
-}
-
-.glow-bottom {
-  bottom: 10%;
-  left: -200px;
-  background: radial-gradient(circle, var(--pika-yellow-light) 0%, transparent 70%);
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1.5rem;
-  position: relative;
-  z-index: 1;
-}
-
-/* Typography & Helpers */
-.text-yellow {
-  color: var(--pika-yellow);
-}
-
-.text-danger {
-  color: var(--pika-cheek);
-}
-
-.code-pill {
-  font-family: var(--font-mono);
-  background: rgba(255, 230, 0, 0.12);
-  color: var(--pika-yellow);
-  padding: 2px 8px;
-  border-radius: 6px;
-  font-size: 0.9em;
-}
-
-/* Header & Navbar */
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: rgba(11, 11, 14, 0.88);
-  backdrop-filter: blur(16px);
-  border-bottom: 1px solid var(--border-subtle);
-  transition: var(--transition);
-}
-
-.header-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0.9rem 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.brand-logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-  color: var(--text-main);
-}
-
-.logo-icon {
-  width: 38px;
-  height: 38px;
-  background: var(--pika-yellow);
-  color: var(--text-dark);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 15px var(--pika-yellow-glow);
-  transform: rotate(-4deg);
-  transition: var(--transition);
-}
-
-.brand-logo:hover .logo-icon {
-  transform: rotate(0deg) scale(1.08);
-}
-
-.bolt-svg {
-  width: 22px;
-  height: 22px;
-}
-
-.brand-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.brand-name {
-  font-size: 1.25rem;
-  font-weight: 800;
-  letter-spacing: -0.5px;
-}
-
-.brand-name .highlight {
-  color: var(--pika-yellow);
-}
-
-.brand-sub {
-  font-size: 0.72rem;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-  font-weight: 600;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-}
-
-.nav-link {
-  color: var(--text-muted);
-  text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 500;
-  transition: var(--transition);
-  position: relative;
-}
-
-.nav-link:hover,
-.nav-link.active {
-  color: var(--pika-yellow);
-}
-
-.nav-link:hover::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: var(--pika-yellow);
-  border-radius: 2px;
-}
-
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.btn-chat-trigger {
-  background: rgba(255, 230, 0, 0.12);
-  border: 1px solid var(--border-active);
-  color: var(--pika-yellow);
-  padding: 8px 16px;
-  border-radius: var(--radius-full);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 600;
-  font-size: 0.88rem;
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.btn-chat-trigger:hover {
-  background: var(--pika-yellow);
-  color: var(--text-dark);
-  box-shadow: 0 0 18px var(--pika-yellow-glow);
-  transform: translateY(-2px);
-}
-
-.chat-dot {
-  width: 8px;
-  height: 8px;
-  background: #10B981;
-  border-radius: 50%;
-  box-shadow: 0 0 8px #10B981;
-  animation: pulse-dot 1.8s infinite;
-}
-
-@keyframes pulse-dot {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.5; transform: scale(0.85); }
-}
-
-.mobile-toggle {
-  display: none;
-  background: none;
-  border: none;
-  color: var(--text-main);
-  font-size: 1.4rem;
-  cursor: pointer;
-}
-
-/* Hero Section */
-.hero-section {
-  padding: 5rem 0 4rem;
-  position: relative;
-}
-
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 3.5rem;
-  align-items: center;
-}
-
-.badge-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(255, 230, 0, 0.1);
-  border: 1px solid var(--border-active);
-  color: var(--pika-yellow-light);
-  padding: 6px 14px;
-  border-radius: var(--radius-full);
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-}
-
-.hero-title {
-  font-size: 3.2rem;
-  font-weight: 800;
-  line-height: 1.15;
-  letter-spacing: -1px;
-  margin-bottom: 1.25rem;
-}
-
-.hero-title .sub-lead {
-  display: block;
-  font-size: 1.7rem;
-  font-weight: 600;
-  color: var(--text-muted);
-  margin-top: 0.5rem;
-  letter-spacing: -0.5px;
-}
-
-.hero-description {
-  font-size: 1.12rem;
-  color: var(--text-muted);
-  line-height: 1.7;
-  margin-bottom: 2rem;
-  max-width: 580px;
-}
-
-.highlight-text {
-  color: var(--pika-yellow);
-  font-weight: 700;
-}
-
-.hero-stats {
-  display: flex;
-  align-items: center;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 1rem 1.4rem;
-  margin-bottom: 2rem;
-  max-width: 520px;
-}
-
-.stat-card {
-  flex: 1;
-  text-align: center;
-}
-
-.stat-val {
-  display: block;
-  font-size: 1.35rem;
-  font-weight: 800;
-  color: var(--pika-yellow);
-  font-family: var(--font-mono);
-}
-
-.stat-lbl {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-weight: 600;
-}
-
-.stat-divider {
-  width: 1px;
-  height: 36px;
-  background: var(--border-subtle);
-}
-
-.hero-cta-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  align-items: center;
-}
-
-/* Button Variants */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 22px;
-  border-radius: var(--radius-md);
-  font-weight: 700;
-  font-size: 0.95rem;
-  cursor: pointer;
-  text-decoration: none;
-  transition: var(--transition);
-  border: none;
-}
-
-.btn-primary {
-  background: var(--pika-yellow);
-  color: var(--text-dark);
-  box-shadow: 0 4px 20px var(--pika-yellow-glow);
-}
-
-.btn-primary:hover {
-  background: var(--pika-yellow-light);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 26px rgba(255, 230, 0, 0.45);
-}
-
-.btn-secondary {
-  background: var(--bg-surface-elevated);
-  color: var(--text-main);
-  border: 1px solid var(--border-subtle);
-}
-
-.btn-secondary:hover {
-  background: var(--bg-surface-hover);
-  border-color: var(--border-active);
-  color: var(--pika-yellow);
-  transform: translateY(-2px);
-}
-
-.btn-ghost {
-  background: transparent;
-  color: var(--pika-yellow-light);
-  border: 1px dashed var(--border-active);
-}
-
-.btn-ghost:hover {
-  background: rgba(255, 230, 0, 0.08);
-  border-style: solid;
-  transform: translateY(-2px);
-}
-
-.btn-block {
-  width: 100%;
-  justify-content: center;
-}
-
-.btn-large {
-  padding: 14px 28px;
-  font-size: 1.05rem;
-}
-
-/* Phone Mockup / Hero Visual */
-.phone-mockup {
-  background: var(--bg-surface);
-  border: 2px solid var(--border-active);
-  border-radius: 28px;
-  padding: 1.25rem;
-  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.6), 0 0 35px var(--pika-yellow-glow);
-  position: relative;
-  overflow: hidden;
-  transition: var(--transition);
-}
-
-.phone-mockup:hover {
-  transform: translateY(-4px);
-  border-color: var(--pika-yellow);
-}
-
-.mockup-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--border-subtle);
-  margin-bottom: 1rem;
-}
-
-.mockup-avatar {
-  width: 38px;
-  height: 38px;
-  background: var(--pika-yellow);
-  color: var(--text-dark);
-  font-size: 1.2rem;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.pika-cheeks {
-  position: absolute;
-  bottom: 5px;
-  width: 6px;
-  height: 6px;
-  background: var(--pika-cheek);
-  border-radius: 50%;
-  box-shadow: 0 0 4px var(--pika-cheek);
-}
-
-.mockup-title-box {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  margin-left: 10px;
-}
-
-.mock-app-name {
-  font-weight: 700;
-  font-size: 0.95rem;
-}
-
-.mock-app-status {
-  font-size: 0.72rem;
-  color: #10B981;
-  font-weight: 600;
-}
-
-.verified-tag {
-  background: rgba(255, 230, 0, 0.12);
-  color: var(--pika-yellow);
-  font-size: 0.75rem;
-  padding: 4px 8px;
-  border-radius: 6px;
-  font-weight: 600;
-  border: 1px solid var(--border-subtle);
-}
-
-.bundle-hero-card {
-  background: linear-gradient(135deg, rgba(255, 230, 0, 0.18) 0%, rgba(20, 20, 26, 0.95) 100%);
-  border: 1px solid var(--border-active);
-  border-radius: var(--radius-md);
-  padding: 1rem;
-  margin-bottom: 1rem;
-}
-
-.bundle-badge {
-  display: inline-block;
-  background: var(--pika-yellow);
-  color: var(--text-dark);
-  font-size: 0.7rem;
-  font-weight: 800;
-  padding: 2px 8px;
-  border-radius: 4px;
-  margin-bottom: 6px;
-}
-
-.bundle-hero-card h4 {
-  font-size: 1.05rem;
-  font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.bundle-hero-card p {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  margin-bottom: 8px;
-}
-
-.bundle-price-row {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.price-cut {
-  text-decoration: line-through;
-  color: var(--text-dim);
-  font-size: 0.85rem;
-}
-
-.price-deal {
-  color: var(--pika-yellow);
-  font-size: 1.25rem;
-  font-weight: 800;
-  font-family: var(--font-mono);
-}
-
-.green-points-tag {
-  background: rgba(16, 185, 129, 0.15);
-  color: #10B981;
-  border: 1px solid rgba(16, 185, 129, 0.3);
-  font-size: 0.72rem;
-  font-weight: 700;
-  padding: 3px 8px;
-  border-radius: var(--radius-full);
-  margin-left: auto;
-}
-
-.mock-mini-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-bottom: 1rem;
-}
-
-.mock-item {
-  display: flex;
-  align-items: center;
-  background: var(--bg-surface-elevated);
-  border: 1px solid var(--border-glass);
-  border-radius: var(--radius-sm);
-  padding: 8px 12px;
-  gap: 10px;
-}
-
-.mock-icon {
-  font-size: 1.3rem;
-}
-
-.mock-meta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.mock-meta strong {
-  font-size: 0.88rem;
-  font-weight: 600;
-}
-
-.rent-tag {
-  background: rgba(255, 71, 87, 0.18);
-  color: var(--pika-cheek);
-  padding: 2px 7px;
-  border-radius: 4px;
-  font-size: 0.72rem;
-  font-weight: 700;
-}
-
-.buy-tag {
-  background: rgba(255, 230, 0, 0.15);
-  color: var(--pika-yellow);
-  padding: 2px 7px;
-  border-radius: 4px;
-  font-size: 0.72rem;
-  font-weight: 700;
-}
-
-.swap-tag {
-  background: rgba(59, 130, 246, 0.15);
-  color: #60A5FA;
-  padding: 2px 7px;
-  border-radius: 4px;
-  font-size: 0.72rem;
-  font-weight: 700;
-}
-
-.mock-perk {
-  background: rgba(255, 230, 0, 0.08);
-  border: 1px dashed var(--border-active);
-  padding: 8px 12px;
-  border-radius: var(--radius-sm);
-  font-size: 0.78rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--text-main);
-  margin-bottom: 0.5rem;
-}
-
-.mockup-footer {
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--border-subtle);
-}
-
-.meetup-hint {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  text-align: center;
-}
-
-.meetup-hint i {
-  color: var(--pika-yellow);
-}
-
-/* Section Common Styling */
-section {
-  padding: 5.5rem 0;
-  position: relative;
-}
-
-.section-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(255, 230, 0, 0.08);
-  border: 1px solid var(--border-active);
-  color: var(--pika-yellow);
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-  padding: 6px 14px;
-  border-radius: var(--radius-full);
-  margin-bottom: 1rem;
-}
-
-.section-title {
-  font-size: 2.3rem;
-  font-weight: 800;
-  letter-spacing: -0.6px;
-  line-height: 1.25;
-  margin-bottom: 1rem;
-}
-
-.section-subtitle {
-  font-size: 1.1rem;
-  color: var(--text-muted);
-  max-width: 680px;
-  line-height: 1.7;
-  margin-bottom: 3rem;
-}
-
-/* About Section */
-.about-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  align-items: stretch;
-}
-
-.about-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
-  padding: 2.2rem;
-  position: relative;
-  overflow: hidden;
-  box-shadow: var(--shadow-card);
-}
-
-.intro-card {
-  border-color: var(--border-active);
-  background: linear-gradient(170deg, #16161D 0%, #101014 100%);
-}
-
-.pika-ears-decor {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  display: flex;
-  gap: 12px;
-}
-
-.ear-left, .ear-right {
-  width: 14px;
-  height: 38px;
-  background: var(--pika-yellow);
-  border-radius: 12px 12px 0 0;
-  position: relative;
-}
-
-.ear-left::after, .ear-right::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 14px;
-  background: var(--bg-black);
-  border-radius: 12px 12px 0 0;
-}
-
-.ear-left {
-  transform: rotate(-15deg);
-}
-
-.ear-right {
-  transform: rotate(18deg);
-}
-
-.profile-header {
-  display: flex;
-  align-items: center;
-  gap: 1.2rem;
-  margin-bottom: 1.5rem;
-}
-
-.avatar-ring {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  padding: 3px;
-  background: linear-gradient(135deg, var(--pika-yellow) 0%, var(--pika-cheek) 100%);
-  box-shadow: 0 0 20px var(--pika-yellow-glow);
-}
-
-.avatar-inner {
-  width: 100%;
-  height: 100%;
-  background: var(--bg-black);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.pika-face {
-  font-size: 2rem;
-}
-
-.profile-name {
-  font-size: 1.45rem;
-  font-weight: 800;
-}
-
-.profile-role {
-  color: var(--pika-yellow);
-  font-size: 0.9rem;
-  font-weight: 600;
-}
-
-.profile-location {
-  color: var(--text-muted);
-  font-size: 0.82rem;
-  margin-top: 2px;
-}
-
-.about-bio {
-  color: var(--text-muted);
-  font-size: 0.98rem;
-  margin-bottom: 1.1rem;
-  line-height: 1.7;
-}
-
-.about-pillars {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.25rem;
-}
-
-.pillar-box {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 1.4rem;
-  transition: var(--transition);
-}
-
-.pillar-box:hover {
-  border-color: var(--border-active);
-  transform: translateY(-3px);
-  background: var(--bg-surface-elevated);
-}
-
-.pillar-icon {
-  font-size: 1.8rem;
-  margin-bottom: 0.75rem;
-}
-
-.pillar-box h4 {
-  font-size: 1.05rem;
-  margin-bottom: 0.4rem;
-  color: var(--text-main);
-}
-
-.pillar-box p {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  line-height: 1.5;
-}
-
-/* Problem vs Solution */
-.problem-solution-box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-bottom: 4rem;
-}
-
-.ps-card {
-  border-radius: var(--radius-lg);
-  padding: 2.2rem;
-}
-
-.problem-card {
-  background: rgba(255, 71, 87, 0.04);
-  border: 1px solid rgba(255, 71, 87, 0.22);
-}
-
-.solution-card {
-  background: rgba(255, 230, 0, 0.04);
-  border: 1px solid var(--border-active);
-}
-
-.ps-header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-}
-
-.problem-card .ps-header {
-  color: var(--pika-cheek);
-}
-
-.solution-card .ps-header {
-  color: var(--pika-yellow);
-}
-
-.ps-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.1rem;
-}
-
-.ps-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  line-height: 1.55;
-}
-
-.ps-list li strong {
-  color: var(--text-main);
-}
-
-/* Unique Superpowers Grid */
-.subsection-title {
-  font-size: 1.6rem;
-  font-weight: 800;
-  margin-bottom: 1.8rem;
-  color: var(--text-main);
-}
-
-.unique-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.5rem;
-}
-
-.feature-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
-  padding: 1.8rem 1.4rem;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  transition: var(--transition);
-}
-
-.feature-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--pika-yellow);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 20px var(--pika-yellow-glow);
-}
-
-.highlighted-feature {
-  background: linear-gradient(160deg, #1D1D26 0%, #13131A 100%);
-  border-color: var(--border-active);
-}
-
-.feature-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 1.2rem;
-}
-
-.feature-icon-badge {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
-  background: rgba(255, 230, 0, 0.12);
-  color: var(--pika-yellow);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.3rem;
-  border: 1px solid var(--border-active);
-}
-
-.feature-num {
-  font-family: var(--font-mono);
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--text-dim);
-}
-
-.feature-card h4 {
-  font-size: 1.12rem;
-  font-weight: 700;
-  margin-bottom: 0.75rem;
-  color: var(--text-main);
-}
-
-.feature-card p {
-  font-size: 0.88rem;
-  color: var(--text-muted);
-  line-height: 1.6;
-  margin-bottom: 1.4rem;
-  flex: 1;
-}
-
-.feature-perk {
-  font-size: 0.78rem;
-  color: var(--pika-yellow);
-  font-weight: 600;
-  background: rgba(255, 230, 0, 0.08);
-  padding: 6px 10px;
-  border-radius: 6px;
-  border: 1px solid var(--border-subtle);
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-
-/* Interactive Campus Hub Simulator */
-.simulator-section {
-  background: #0E0E12;
-  border-top: 1px solid var(--border-subtle);
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.demo-tabs {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 2rem;
-}
-
-.demo-tab-btn {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  color: var(--text-muted);
-  padding: 10px 18px;
-  border-radius: var(--radius-full);
-  font-size: 0.9rem;
-  font-weight: 600;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: var(--transition);
-}
-
-.demo-tab-btn:hover {
-  color: var(--pika-yellow);
-  border-color: var(--border-active);
-}
-
-.demo-tab-btn.active {
-  background: var(--pika-yellow);
-  color: var(--text-dark);
-  border-color: var(--pika-yellow);
-  box-shadow: 0 0 15px var(--pika-yellow-glow);
-}
-
-.listings-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 3.5rem;
-}
-
-.listing-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 1.3rem;
-  display: flex;
-  flex-direction: column;
-  transition: var(--transition);
-  position: relative;
-}
-
-.listing-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--border-active);
-  box-shadow: var(--shadow-card);
-}
-
-.listing-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 0.9rem;
-}
-
-.listing-category {
-  font-size: 0.72rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  color: var(--pika-yellow);
-}
-
-.type-badge {
-  font-size: 0.7rem;
-  font-weight: 700;
-  padding: 2px 7px;
-  border-radius: 4px;
-}
-
-.type-badge.bundle { background: var(--pika-yellow); color: var(--text-dark); }
-.type-badge.rent { background: rgba(255, 71, 87, 0.2); color: var(--pika-cheek); }
-.type-badge.buy { background: rgba(16, 185, 129, 0.2); color: #10B981; }
-.type-badge.swap { background: rgba(59, 130, 246, 0.2); color: #60A5FA; }
-
-.listing-title {
-  font-size: 1.05rem;
-  font-weight: 700;
-  margin-bottom: 0.4rem;
-}
-
-.listing-desc {
-  font-size: 0.82rem;
-  color: var(--text-muted);
-  line-height: 1.5;
-  margin-bottom: 1rem;
-  flex: 1;
-}
-
-.listing-pricing {
-  display: flex;
-  align-items: baseline;
-  gap: 8px;
-  margin-bottom: 0.8rem;
-}
-
-.curr-price {
-  font-size: 1.25rem;
-  font-weight: 800;
-  color: var(--pika-yellow);
-  font-family: var(--font-mono);
-}
-
-.orig-price {
-  font-size: 0.82rem;
-  text-decoration: line-through;
-  color: var(--text-dim);
-}
-
-.listing-footer-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-top: 0.75rem;
-  border-top: 1px solid var(--border-glass);
-}
-
-.listing-seller {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.listing-green-tag {
-  font-size: 0.72rem;
-  color: #10B981;
-  font-weight: 700;
-}
-
-/* Calculator Card */
-.calculator-card {
-  background: linear-gradient(135deg, #171720 0%, #101015 100%);
-  border: 1px solid var(--border-active);
-  border-radius: var(--radius-lg);
-  padding: 2.2rem;
-  box-shadow: var(--shadow-card);
-}
-
-.calc-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 2rem;
-  padding-bottom: 1.2rem;
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.badge-tag {
-  color: #10B981;
-  font-size: 0.8rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  display: block;
-  margin-bottom: 4px;
-}
-
-.calc-header h3 {
-  font-size: 1.5rem;
-  font-weight: 800;
-}
-
-.calc-header p {
-  font-size: 0.88rem;
-  color: var(--text-muted);
-}
-
-.calc-icon {
-  width: 52px;
-  height: 52px;
-  background: var(--pika-yellow);
-  color: var(--text-dark);
-  border-radius: 14px;
-  font-size: 1.7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 20px var(--pika-yellow-glow);
-}
-
-.calc-body {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
-  align-items: center;
-}
-
-.styled-select {
-  width: 100%;
-  padding: 12px 14px;
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
-  color: var(--text-main);
-  font-family: var(--font-main);
-  font-size: 0.95rem;
-  margin-top: 8px;
-  margin-bottom: 1.5rem;
-  outline: none;
-  cursor: pointer;
-}
-
-.styled-select:focus {
-  border-color: var(--pika-yellow);
-}
-
-.checkbox-group {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.custom-checkbox {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer;
-  font-size: 0.92rem;
-  color: var(--text-muted);
-}
-
-.custom-checkbox input[type="checkbox"] {
-  accent-color: var(--pika-yellow);
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
-}
-
-.custom-checkbox:hover {
-  color: var(--text-main);
-}
-
-.calc-results {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-}
-
-.result-tile {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 1.2rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.result-label {
-  font-size: 0.76rem;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  font-weight: 600;
-  margin-bottom: 6px;
-}
-
-.result-amount {
-  font-family: var(--font-mono);
-  font-size: 1.5rem;
-  font-weight: 800;
-}
-
-.result-amount.danger { color: var(--pika-cheek); }
-.result-amount.success { color: #10B981; }
-.result-amount.yellow { color: var(--pika-yellow); }
-.result-amount.green { color: #10B981; }
-
-.highlight-tile {
-  border-color: var(--border-active);
-  background: rgba(255, 230, 0, 0.08);
-}
-
-.eco-tile {
-  border-color: rgba(16, 185, 129, 0.3);
-  background: rgba(16, 185, 129, 0.08);
-}
-
-.perk-note {
-  font-size: 0.72rem;
-  color: #10B981;
-  font-weight: 700;
-  margin-top: 4px;
-}
-
-/* Revenue & Business Model */
-.revenue-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  margin-bottom: 3.5rem;
-}
-
-.revenue-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
-  padding: 2.2rem 1.8rem;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  transition: var(--transition);
-}
-
-.revenue-card:hover {
-  transform: translateY(-4px);
-  border-color: var(--border-active);
-}
-
-.highlighted-rev {
-  border-color: var(--border-active);
-  background: linear-gradient(160deg, #1C1C24 0%, #121217 100%);
-  box-shadow: 0 0 25px var(--pika-yellow-glow);
-}
-
-.rev-icon-box {
-  width: 50px;
-  height: 50px;
-  background: rgba(255, 230, 0, 0.12);
-  color: var(--pika-yellow);
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.4rem;
-  margin-bottom: 1.2rem;
-}
-
-.rev-tag {
-  font-size: 0.72rem;
-  color: var(--pika-yellow);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.6px;
-  margin-bottom: 6px;
-}
-
-.revenue-card h3 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin-bottom: 0.8rem;
-}
-
-.revenue-card p {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-  flex: 1;
-}
-
-.rev-stat {
-  padding-top: 1rem;
-  border-top: 1px solid var(--border-glass);
-  font-size: 0.82rem;
-  color: var(--text-muted);
-  font-weight: 500;
-}
-
-/* Workflow Steps */
-.workflow-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
-  padding: 2.2rem;
-}
-
-.workflow-title {
-  font-size: 1.35rem;
-  font-weight: 800;
-  margin-bottom: 2rem;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.workflow-steps {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.step-item {
-  text-align: center;
-  flex: 1;
-}
-
-.step-circle {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: rgba(255, 230, 0, 0.15);
-  color: var(--pika-yellow);
-  border: 1px solid var(--border-active);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 800;
-  font-family: var(--font-mono);
-  font-size: 1.1rem;
-  margin: 0 auto 0.75rem;
-}
-
-.step-item strong {
-  display: block;
-  font-size: 0.98rem;
-  margin-bottom: 4px;
-}
-
-.step-item p {
-  font-size: 0.8rem;
-  color: var(--text-muted);
-}
-
-.step-arrow {
-  color: var(--pika-yellow);
-  font-size: 1.2rem;
-}
-
-/* Botpress Spotlight */
-.botpress-spotlight {
-  padding: 3rem 0;
-}
-
-.bot-card {
-  background: linear-gradient(135deg, #1C1C22 0%, #101015 100%);
-  border: 2px solid var(--border-active);
-  border-radius: var(--radius-lg);
-  padding: 2.5rem;
-  position: relative;
-  box-shadow: 0 0 35px var(--pika-yellow-glow);
-}
-
-.bot-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(16, 185, 129, 0.15);
-  border: 1px solid rgba(16, 185, 129, 0.35);
-  color: #10B981;
-  font-size: 0.78rem;
-  font-weight: 700;
-  padding: 4px 12px;
-  border-radius: var(--radius-full);
-  margin-bottom: 1.2rem;
-}
-
-.pulsing-dot {
-  width: 7px;
-  height: 7px;
-  background: #10B981;
-  border-radius: 50%;
-  animation: pulse-dot 1.5s infinite;
-}
-
-.bot-content-flex {
-  display: grid;
-  grid-template-columns: 1.4fr 0.8fr;
-  gap: 2.5rem;
-  align-items: center;
-}
-
-.bot-text h2 {
-  font-size: 1.85rem;
-  font-weight: 800;
-  margin-bottom: 0.8rem;
-  letter-spacing: -0.5px;
-}
-
-.bot-text p {
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  margin-bottom: 1.4rem;
-  line-height: 1.6;
-}
-
-.bot-chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.chip-btn {
-  background: var(--bg-surface-elevated);
-  border: 1px solid var(--border-subtle);
-  color: var(--text-main);
-  padding: 7px 12px;
-  border-radius: var(--radius-full);
-  font-size: 0.8rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: var(--transition);
-}
-
-.chip-btn:hover {
-  background: var(--pika-yellow);
-  color: var(--text-dark);
-  border-color: var(--pika-yellow);
-}
-
-.bot-cta-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 12px;
-}
-
-.bot-note {
-  font-size: 0.82rem;
-  color: var(--pika-yellow-light);
-}
-
-/* Contact Section */
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 2.5rem;
-}
-
-.contact-info-card, .contact-form-card {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-lg);
-  padding: 2.2rem;
-}
-
-.contact-info-card h3, .contact-form-card h3 {
-  font-size: 1.4rem;
-  font-weight: 800;
-  margin-bottom: 0.6rem;
-}
-
-.contact-info-card p {
-  color: var(--text-muted);
-  font-size: 0.9rem;
-  margin-bottom: 2rem;
-}
-
-.contact-item {
-  display: flex;
-  gap: 14px;
-  margin-bottom: 1.5rem;
-}
-
-.ci-icon {
-  width: 42px;
-  height: 42px;
-  border-radius: 10px;
-  background: rgba(255, 230, 0, 0.12);
-  color: var(--pika-yellow);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-  flex-shrink: 0;
-}
-
-.contact-item strong {
-  display: block;
-  font-size: 0.82rem;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  font-weight: 700;
-}
-
-.contact-item span, .contact-item a {
-  font-size: 0.95rem;
-  color: var(--text-main);
-  text-decoration: none;
-}
-
-.link-yellow:hover {
-  color: var(--pika-yellow);
-}
-
-.social-links-row {
-  display: flex;
-  gap: 12px;
-  margin-top: 2rem;
-}
-
-.social-circle {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background: var(--bg-surface-elevated);
-  border: 1px solid var(--border-subtle);
-  color: var(--text-main);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.1rem;
-  text-decoration: none;
-  transition: var(--transition);
-}
-
-.social-circle:hover {
-  background: var(--pika-yellow);
-  color: var(--text-dark);
-  border-color: var(--pika-yellow);
-  transform: translateY(-3px);
-}
-
-/* Contact Form */
-.form-group {
-  margin-bottom: 1.25rem;
-}
-
-.form-group label {
-  display: block;
-  font-size: 0.85rem;
-  font-weight: 600;
-  margin-bottom: 6px;
-  color: var(--text-main);
-}
-
-.form-group input, .form-group textarea {
-  width: 100%;
-  padding: 12px 14px;
-  background: var(--bg-surface-elevated);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-sm);
-  color: var(--text-main);
-  font-family: var(--font-main);
-  font-size: 0.95rem;
-  transition: var(--transition);
-  outline: none;
-}
-
-.form-group input:focus, .form-group textarea:focus {
-  border-color: var(--pika-yellow);
-  box-shadow: 0 0 10px var(--pika-yellow-glow);
-}
-
-.form-status {
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  display: none;
-  padding: 10px;
-  border-radius: var(--radius-sm);
-  text-align: center;
-}
-
-.form-status.success {
-  display: block;
-  background: rgba(16, 185, 129, 0.15);
-  color: #10B981;
-  border: 1px solid rgba(16, 185, 129, 0.3);
-}
-
-/* Footer */
-.site-footer {
-  border-top: 1px solid var(--border-subtle);
-  padding: 2.5rem 0;
-  background: #09090C;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-.footer-brand {
-  font-size: 1.1rem;
-  margin-bottom: 4px;
-}
-
-.bolt-pika {
-  color: var(--pika-yellow);
-}
-
-.footer-note {
-  font-size: 0.82rem;
-  color: var(--text-muted);
-}
-
-.footer-right {
-  font-size: 0.82rem;
-  color: var(--text-dim);
-}
-
-/* Responsive Breakpoints */
-@media (max-width: 992px) {
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 3rem;
-  }
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-  .unique-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-  .revenue-grid {
-    grid-template-columns: 1fr;
-  }
-  .calc-body {
-    grid-template-columns: 1fr;
-  }
-  .bot-content-flex {
-    grid-template-columns: 1fr;
-  }
-  .workflow-steps {
-    flex-direction: column;
-  }
-  .step-arrow {
-    transform: rotate(90deg);
-  }
-}
-
-@media (max-width: 768px) {
-  .mobile-toggle {
-    display: block;
-  }
-  .nav-links {
-    position: fixed;
-    top: 65px;
-    left: 0;
-    right: 0;
-    background: rgba(11, 11, 14, 0.98);
-    flex-direction: column;
-    padding: 2rem;
-    gap: 1.5rem;
-    border-bottom: 1px solid var(--border-subtle);
-    display: none;
-  }
-  .nav-links.active {
-    display: flex;
-  }
-  .hero-title {
-    font-size: 2.4rem;
-  }
-  .hero-title .sub-lead {
-    font-size: 1.3rem;
-  }
-  .unique-grid {
-    grid-template-columns: 1fr;
-  }
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-  .problem-solution-box {
-    grid-template-columns: 1fr;
-  }
-  .about-pillars {
-    grid-template-columns: 1fr;
-  }
-}
-
-  </style>
-
-  <!-- Botpress Webchat Integration -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ==========================================
+       BOTPRESS WEBCHAT SCRIPTS (User Provided)
+       ========================================== -->
   <script src="https://cdn.botpress.cloud/webchat/v5.0/inject.js"></script>
-  <script src="https://files.bpcontent.cloud/2026/10/08/12/20261008122825-ON9AY5O6.js" defer></script>
+  <script src="https://files.bpcontent.cloud/2026/10/14/12/20261014122647-DANTXBYN.js" defer></script>
 </head>
 <body>
 
-  <!-- Ambient Pikachu Glow Effects -->
-  <div class="ambient-glow glow-top"></div>
-  <div class="ambient-glow glow-bottom"></div>
-
-  <!-- Header & Navigation -->
-  <header class="site-header" id="header">
-    <div class="header-container">
-      <a href="#hero" class="brand-logo">
-        <div class="logo-icon">
-          <svg viewBox="0 0 24 24" class="bolt-svg" fill="currentColor">
-            <path d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.67.19-.35.09-.17.13-.24C8.6 10.4 11.24 5.9 14.5 2h1l-1 7h4.5c.47 0 .61.35.42.7-.16.3-.08.15-.12.22L11 21z"/>
-          </svg>
-        </div>
-        <div class="brand-text">
-          <span class="brand-name">Yuvika<span class="highlight">.dev</span></span>
-          <span class="brand-sub">JECRC Jaipur</span>
-        </div>
-      </a>
-
-      <nav class="nav-links" id="navMenu">
-        <a href="#about" class="nav-link">About</a>
-        <a href="#thriftloop" class="nav-link">ThriftLoop</a>
-        <a href="#unique" class="nav-link">Why Unique</a>
-        <a href="#interactive-demo" class="nav-link">Campus Hub</a>
-        <a href="#business-model" class="nav-link">Revenue</a>
-        <a href="#contact" class="nav-link">Connect</a>
-      </nav>
-
-      <div class="header-actions">
-        <button class="btn-chat-trigger" id="openChatbotBtn" title="Launch Botpress AI Assistant">
-          <span class="chat-dot"></span>
-          <i class="fa-solid fa-comment-dots"></i>
-          <span>Ask AI Bot</span>
-        </button>
-        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
-          <i class="fa-solid fa-bars"></i>
-        </button>
+  <!-- ==========================================
+       NAVIGATION BAR
+       ========================================== -->
+  <header class="navbar">
+    <a href="#hero" class="nav-brand">
+      <div class="brand-avatar">
+        <!-- Shinchan Face SVG mini -->
+        <svg width="34" height="34" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="46" fill="#FFE5B4" stroke="#18181B" stroke-width="6"/>
+          <!-- Hair -->
+          <path d="M12 40 C 20 10, 80 10, 88 40 C 70 20, 30 20, 12 40 Z" fill="#18181B"/>
+          <!-- Thick Shinchan Eyebrows -->
+          <ellipse cx="32" cy="38" rx="14" ry="5" fill="#18181B" transform="rotate(-8 32 38)"/>
+          <ellipse cx="68" cy="38" rx="14" ry="5" fill="#18181B" transform="rotate(8 68 38)"/>
+          <!-- Eyes -->
+          <circle cx="34" cy="48" r="5" fill="#18181B"/>
+          <circle cx="66" cy="48" r="5" fill="#18181B"/>
+          <!-- Rosy Cheeks -->
+          <circle cx="20" cy="58" r="7" fill="#FF708F" opacity="0.8"/>
+          <circle cx="80" cy="58" r="7" fill="#FF708F" opacity="0.8"/>
+          <!-- Grinning Mouth -->
+          <path d="M38 66 Q 50 80 62 66" stroke="#18181B" stroke-width="5" stroke-linecap="round" fill="#FF334B"/>
+        </svg>
       </div>
+      <div class="brand-text">
+        <span class="brand-name">SHWETA</span>
+        <span class="brand-sub">JECRC University '28 • Robotics</span>
+      </div>
+    </a>
+
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#startup">Startup Idea 🤖</a></li>
+        <li><a href="#simulation">Live Demo 💦</a></li>
+        <li><a href="#about">About Me 🎓</a></li>
+        <li><a href="#funzone">Shinchan Zone 🖍️</a></li>
+        <li><a href="#contact">Contact 📬</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="audio-toggle-btn" id="audioToggleBtn" title="Toggle Sound Effects">🔊</button>
+      <a href="#startup" class="comic-btn btn-yellow" style="padding: 8px 16px; font-size: 0.95rem;">Pitch Deck ⚡</a>
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">☰</button>
     </div>
   </header>
 
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
   <main>
-    <!-- Hero Section -->
     <section class="hero-section" id="hero">
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <div class="badge-pill">
-            <span class="sparkle">⚡</span>
-            <span>B.Tech Student &bull; JECRC College, Jaipur</span>
+      <div class="hero-content">
+        <div class="speech-bubble">
+          Ohoho! Welcome to my engineering lab! 🖍️
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="highlight-red">Shweta</span>! <br>
+          Building <span class="highlight-yellow">Smart Robotics</span> for Clean Water.
+        </h1>
+
+        <p class="hero-subtitle">
+          B.Tech 1st Year Engineering student at <strong>JECRC University</strong>. 
+          Turning bold ideas into real hardware — inspired by Shinchan's fearless curiosity and boundless energy!
+        </p>
+
+        <div class="hero-meta-tags">
+          <span class="comic-badge">🎓 JECRC University, Jaipur</span>
+          <span class="comic-badge">🤖 Overhead Tank Robotics</span>
+          <span class="comic-badge">⚡ Hardware & IoT Prototyper</span>
+          <span class="comic-badge">💬 AI Chatbot Integrated</span>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="#startup" class="comic-btn btn-red">
+            <span>🚀 Explore Tank Robot Startup</span>
+          </a>
+          <a href="javascript:void(0)" id="heroChatTrigger" class="comic-btn btn-white">
+            <span>💬 Talk to My AI Assistant</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Shinchan & Tank Robot Artwork Card -->
+      <div class="hero-visual-card">
+        <div class="floating-action-sticker">
+          <span>⚡</span>
+          ACTION<br>KAMEN!
+        </div>
+
+        <!-- High-Detail Shinchan & Tank Robot SVG Artwork -->
+        <svg class="hero-shinchan-art" viewBox="0 0 420 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Background Glow -->
+          <circle cx="210" cy="190" r="160" fill="#FFF9D2" stroke="#18181B" stroke-width="4" stroke-dasharray="8 6"/>
+
+          <!-- ==================== SHIRO (WHITEY) ==================== -->
+          <g transform="translate(40, 230)">
+            <!-- Shiro Body -->
+            <ellipse cx="40" cy="55" rx="32" ry="24" fill="#FFFFFF" stroke="#18181B" stroke-width="4"/>
+            <!-- Shiro Head -->
+            <circle cx="28" cy="35" r="22" fill="#FFFFFF" stroke="#18181B" stroke-width="4"/>
+            <!-- Shiro Ears -->
+            <ellipse cx="14" cy="22" rx="7" ry="14" fill="#FFFFFF" stroke="#18181B" stroke-width="4" transform="rotate(-25 14 22)"/>
+            <ellipse cx="40" cy="20" rx="7" ry="14" fill="#FFFFFF" stroke="#18181B" stroke-width="4" transform="rotate(20 40 20)"/>
+            <!-- Shiro Face -->
+            <circle cx="22" cy="34" r="3" fill="#18181B"/>
+            <circle cx="34" cy="34" r="3" fill="#18181B"/>
+            <ellipse cx="28" cy="40" rx="4" ry="3" fill="#18181B"/>
+            <!-- Shiro Robot Goggles -->
+            <rect x="15" y="28" width="28" height="10" rx="4" fill="#00B4D8" stroke="#18181B" stroke-width="3" opacity="0.85"/>
+            <!-- Collar -->
+            <path d="M18 48 Q 28 54 38 48" stroke="#00D26A" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="28" cy="54" r="4" fill="#FFDE00" stroke="#18181B" stroke-width="2"/>
+          </g>
+
+          <!-- ==================== SHINCHAN ==================== -->
+          <g transform="translate(130, 25)">
+            <!-- Head Shape -->
+            <path d="M50 40 C 25 40 10 65 15 95 C 10 115 30 135 60 135 C 95 135 110 110 105 80 C 100 45 80 40 50 40 Z" fill="#FFE0BD" stroke="#18181B" stroke-width="5"/>
+            <!-- Signature Black Hair -->
+            <path d="M25 60 C 25 30 50 20 85 28 C 100 32 105 45 106 65 C 98 48 85 40 68 40 C 45 40 30 50 25 60 Z" fill="#18181B"/>
+            <!-- Bold Thick Eyebrows -->
+            <path d="M30 65 Q 46 52 60 62" stroke="#18181B" stroke-width="9" stroke-linecap="round"/>
+            <path d="M72 63 Q 86 52 100 66" stroke="#18181B" stroke-width="9" stroke-linecap="round"/>
+            <!-- Big Innocent Eyes -->
+            <ellipse cx="48" cy="78" rx="8" ry="10" fill="#18181B"/>
+            <circle cx="46" cy="75" r="3" fill="#FFFFFF"/>
+            <ellipse cx="86" cy="79" rx="8" ry="10" fill="#18181B"/>
+            <circle cx="84" cy="76" r="3" fill="#FFFFFF"/>
+            <!-- Rosy Cheeks -->
+            <ellipse cx="28" cy="98" rx="10" ry="7" fill="#FF85A1" opacity="0.85"/>
+            <ellipse cx="98" cy="100" rx="10" ry="7" fill="#FF85A1" opacity="0.85"/>
+            <!-- Playful Open Mouth -->
+            <path d="M54 105 Q 66 122 78 105 Z" fill="#E63946" stroke="#18181B" stroke-width="4"/>
+            <!-- Classic Red T-Shirt -->
+            <path d="M32 135 L 20 180 L 110 180 L 98 135 Z" fill="#FF334B" stroke="#18181B" stroke-width="5"/>
+            <!-- Sleeves & Arms -->
+            <path d="M24 140 L 5 170 L 22 178 L 32 155" fill="#FFE0BD" stroke="#18181B" stroke-width="4"/>
+            <path d="M106 140 L 125 170 L 108 178 L 98 155" fill="#FFE0BD" stroke="#18181B" stroke-width="4"/>
+            <!-- Classic Yellow Shorts -->
+            <path d="M26 180 L 22 220 L 58 220 L 65 195 L 72 220 L 108 220 L 104 180 Z" fill="#FFDE00" stroke="#18181B" stroke-width="5"/>
+            <!-- Legs & Shoes -->
+            <rect x="34" y="220" width="16" height="24" fill="#FFE0BD" stroke="#18181B" stroke-width="4"/>
+            <ellipse cx="40" cy="246" rx="15" ry="9" fill="#FFDE00" stroke="#18181B" stroke-width="4"/>
+            <rect x="80" y="220" width="16" height="24" fill="#FFE0BD" stroke="#18181B" stroke-width="4"/>
+            <ellipse cx="88" cy="246" rx="15" ry="9" fill="#FFDE00" stroke="#18181B" stroke-width="4"/>
+          </g>
+
+          <!-- ==================== TANK CLEANING ROBOT ==================== -->
+          <g transform="translate(255, 205)">
+            <!-- Remote Antenna -->
+            <line x1="60" y1="20" x2="60" y2="-5" stroke="#18181B" stroke-width="4"/>
+            <circle cx="60" cy="-7" r="6" fill="#FF334B" stroke="#18181B" stroke-width="3"/>
+            <!-- Robot Chassis -->
+            <rect x="15" y="20" width="90" height="55" rx="12" fill="#00B4D8" stroke="#18181B" stroke-width="5"/>
+            <!-- Inspection Camera Lens Eye -->
+            <circle cx="60" cy="45" r="15" fill="#FFFFFF" stroke="#18181B" stroke-width="4"/>
+            <circle cx="60" cy="45" r="8" fill="#FFDE00" stroke="#18181B" stroke-width="3"/>
+            <circle cx="62" cy="43" r="3" fill="#FFFFFF"/>
+            <!-- Tank Cleaning Rotating Brush Wheels (Left & Right) -->
+            <g transform="translate(10, 68)">
+              <circle cx="15" cy="15" r="14" fill="#18181B"/>
+              <circle cx="15" cy="15" r="9" fill="#FFDE00" stroke="#FFFFFF" stroke-width="2"/>
+              <!-- Scrub Bristles -->
+              <line x1="15" y1="1" x2="15" y2="-4" stroke="#FF6584" stroke-width="3"/>
+              <line x1="29" y1="15" x2="34" y2="15" stroke="#FF6584" stroke-width="3"/>
+              <line x1="15" y1="29" x2="15" y2="34" stroke="#FF6584" stroke-width="3"/>
+              <line x1="1" y1="15" x2="-4" y2="15" stroke="#FF6584" stroke-width="3"/>
+            </g>
+            <g transform="translate(68, 68)">
+              <circle cx="15" cy="15" r="14" fill="#18181B"/>
+              <circle cx="15" cy="15" r="9" fill="#FFDE00" stroke="#FFFFFF" stroke-width="2"/>
+              <!-- Scrub Bristles -->
+              <line x1="15" y1="1" x2="15" y2="-4" stroke="#FF6584" stroke-width="3"/>
+              <line x1="29" y1="15" x2="34" y2="15" stroke="#FF6584" stroke-width="3"/>
+              <line x1="15" y1="29" x2="15" y2="34" stroke="#FF6584" stroke-width="3"/>
+              <line x1="1" y1="15" x2="-4" y2="15" stroke="#FF6584" stroke-width="3"/>
+            </g>
+            <!-- Water & Slurry Extraction Hose -->
+            <path d="M95 50 Q 125 55 130 90" stroke="#2EC4B6" stroke-width="6" stroke-linecap="round" fill="none"/>
+            <path d="M95 50 Q 125 55 130 90" stroke="#18181B" stroke-width="2" stroke-linecap="round" fill="none" stroke-dasharray="3 3"/>
+            <!-- Scrub Water Bubbles -->
+            <circle cx="5" cy="40" r="5" fill="#E0F7FA" stroke="#00B4D8" stroke-width="2"/>
+            <circle cx="-10" cy="25" r="7" fill="#E0F7FA" stroke="#00B4D8" stroke-width="2"/>
+          </g>
+
+          <!-- Chocobi Box Floating Mini -->
+          <g transform="translate(25, 45)">
+            <polygon points="25,5 45,16 45,46 25,57 5,46 5,16" fill="#FF6584" stroke="#18181B" stroke-width="3"/>
+            <polygon points="25,5 45,16 25,26 5,16" fill="#FF85A1"/>
+            <!-- Cute Green Dinosaur/Crocodile -->
+            <circle cx="25" cy="36" r="8" fill="#00D26A" stroke="#18181B" stroke-width="2"/>
+            <circle cx="23" cy="34" r="1.5" fill="#18181B"/>
+            <circle cx="27" cy="34" r="1.5" fill="#18181B"/>
+          </g>
+        </svg>
+
+        <div class="hero-card-footer">
+          <div>
+            <strong>AquaScrub Robot V1</strong>
+            <p style="font-size: 0.8rem; color: #666;">Zero Human Entry • IP68 Waterproof</p>
+          </div>
+          <span class="comic-badge" style="background: #BBF7D0;">✅ Patent Pending Idea</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         STARTUP INNOVATION DEEP DIVE SECTION
+         ========================================== -->
+    <section class="section-wrapper" id="startup">
+      <div class="section-header">
+        <span class="section-tag">💡 The Startup Idea</span>
+        <h2 class="section-title">Automated Overhead Water Tank Cleaning</h2>
+        <p class="section-subtitle">
+          Say goodbye to filthy confined tanks and dangerous manual entry. 
+          Meet the robotic solution engineering a healthier, safer future for millions of homes.
+        </p>
+      </div>
+
+      <div class="startup-card">
+        <!-- Big Banner -->
+        <div class="startup-banner">
+          <div class="banner-info">
+            <h3>AquaScrub Robotics — Innovation by Shweta</h3>
+            <p>A compact, remotely operated robotic crawler built to sanitize residential & commercial overhead tanks.</p>
+          </div>
+          <div class="banner-badge">
+            🚀 JECRC Student Startup Project
+          </div>
+        </div>
+
+        <!-- Problem vs Solution Comparison Grid -->
+        <div class="dual-column-grid">
+          <!-- Problem Box -->
+          <div class="comic-box box-problem">
+            <div class="box-header">
+              <div class="box-icon">⚠️</div>
+              <h4>The Painful Reality Today</h4>
+            </div>
+            
+            <p class="quote-highlight">
+              "Cleaning household overhead water tanks is difficult, messy, and time-consuming. People often have to manually enter or reach inside the tank, and many households postpone cleaning because of the inconvenience."
+            </p>
+
+            <ul class="bullet-list">
+              <li>
+                <span class="bullet-icon">❌</span>
+                <div>
+                  <strong>Dangerous Confined Space:</strong> Workers or homeowners must squeeze into narrow, dark, low-oxygen tank manholes.
+                </div>
+              </li>
+              <li>
+                <span class="bullet-icon">❌</span>
+                <div>
+                  <strong>Unhygienic & Labor-Intensive:</strong> Sludge, toxic biofilm, bacterial colonies, and algae accumulate because tanks are cleaned only once a year or less.
+                </div>
+              </li>
+              <li>
+                <span class="bullet-icon">❌</span>
+                <div>
+                  <strong>Massive Water Wastage:</strong> Traditional manual cleaning drains thousands of liters of usable water down the drain just to sweep.
+                </div>
+              </li>
+              <li>
+                <span class="bullet-icon">❌</span>
+                <div>
+                  <strong>Postponed Health Risk:</strong> Waterborne diseases spread silently when families delay cleaning due to high labor costs and hassle.
+                </div>
+              </li>
+            </ul>
           </div>
 
-          <h1 class="hero-title">
-            Hi, I'm <span class="text-yellow">Yuvika Jangid</span>
-            <span class="sub-lead">Building Tech for Sustainable Campuses</span>
-          </h1>
+          <!-- Solution Box -->
+          <div class="comic-box box-solution">
+            <div class="box-header">
+              <div class="box-icon">💡</div>
+              <h4>Shweta's Robotic Innovation</h4>
+            </div>
 
-          <p class="hero-description">
-            Innovator and developer tackling real student challenges. Creator of 
-            <strong class="highlight-text">ThriftLoop</strong> — a hyper-local campus resale, swap, and rental platform that turns end-of-semester waste into student wealth and green rewards.
+            <p class="quote-highlight">
+              "A compact, remotely operated robotic device designed to navigate inside overhead water tanks and mechanically remove sludge, sediment, algae, and biofilm using rotating brushes or scrubbing mechanisms."
+            </p>
+
+            <ul class="bullet-list">
+              <li>
+                <span class="bullet-icon">✅</span>
+                <div>
+                  <strong>Zero Human Entry:</strong> Slips easily through standard tank lids (300mm–450mm). Safe, hands-off operation from the outside!
+                </div>
+              </li>
+              <li>
+                <span class="bullet-icon">✅</span>
+                <div>
+                  <strong>Mechanical Dual Rotating Scrubbers:</strong> High-torque nylon & microfiber brushes vigorously scour stubborn sediment and algae layers.
+                </div>
+              </li>
+              <li>
+                <span class="bullet-icon">✅</span>
+                <div>
+                  <strong>Integrated Sludge & Slurry Extraction:</strong> Integrated submersible pump vacuums dislodged sediment directly out via exhaust pipe.
+                </div>
+              </li>
+              <li>
+                <span class="bullet-icon">✅</span>
+                <div>
+                  <strong>Wireless Telemetry & Control:</strong> Controlled remotely via smartphone app or handheld transmitter with live inspection camera feedback.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Hardware & Engineering Pillars -->
+        <h3 class="comic-title" style="font-size: 1.8rem; margin-top: 15px; margin-bottom: 5px;">
+          🛠️ How the Robotic System Works
+        </h3>
+        <p style="color: var(--muted-text); margin-bottom: 20px;">
+          Engineered for affordability, rugged submersible performance, and effortless deployment.
+        </p>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">🔄</div>
+            <h4>Rotating Scrubbing System</h4>
+            <p>Counter-rotating bristles dislodge thick algae, calcium scales, and biofilm from both tank floors and curved vertical walls without scratching plastic or cement.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">🌪️</div>
+            <h4>Slurry Extraction Mechanism</h4>
+            <p>Equipped with a high-flow diaphragm slurry pump that vacuums loosened debris directly out through an external discharge hose without needing to empty the entire tank.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">📡</div>
+            <h4>Wireless Remote Guidance</h4>
+            <p>Wi-Fi / Bluetooth telemetry allows the operator to steer the bot, adjust scrubbing speeds, and inspect hard-to-see corners safely from the roof terrace.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">🛡️</div>
+            <h4>IP68 Submersible Hull</h4>
+            <p>Compact, waterproof aluminum-composite chassis sealed with food-grade silicone, ensuring no rust, no oil leaks, and zero chemical contamination.</p>
+          </div>
+        </div>
+
+        <!-- Live Tank ROI / Impact Calculator -->
+        <div class="calc-card">
+          <div class="calc-selector">
+            <h4 class="comic-title" style="font-size: 1.4rem;">📊 Efficiency & Savings Estimator</h4>
+            <p style="font-size: 0.95rem; color: var(--muted-text);">
+              Select your rooftop overhead water tank capacity to see how much time, water, and risk Shweta's robot eliminates:
+            </p>
+            <div class="tank-chips">
+              <button class="tank-chip" data-size="500">500 Liters (1 BHK)</button>
+              <button class="tank-chip active" data-size="1000">1,000 Liters (House)</button>
+              <button class="tank-chip" data-size="2000">2,000 Liters (Villa)</button>
+              <button class="tank-chip" data-size="5000">5,000 Liters (Society)</button>
+            </div>
+          </div>
+
+          <div class="calc-metrics">
+            <div class="metric-tile">
+              <div class="metric-num" id="metricTimeSaved">135 Mins</div>
+              <div class="metric-label">⏱️ Manual Time Saved</div>
+            </div>
+            <div class="metric-tile">
+              <div class="metric-num" id="metricWaterSaved">350 Liters</div>
+              <div class="metric-label">💧 Clean Water Saved</div>
+            </div>
+            <div class="metric-tile">
+              <div class="metric-num" id="metricHygiene">99.8%</div>
+              <div class="metric-label">✨ Biofilm Removed</div>
+            </div>
+            <div class="metric-tile">
+              <div class="metric-num" id="metricRisk">0% (Safe)</div>
+              <div class="metric-label">🦺 Confined Space Risk</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         INTERACTIVE TANK CLEANING SIMULATION DEMO
+         ========================================== -->
+    <section class="section-wrapper" id="simulation">
+      <div class="section-header">
+        <span class="section-tag">🎮 Interactive Demo</span>
+        <h2 class="section-title">See the Robot in Action!</h2>
+        <p class="section-subtitle">
+          Test the cleaning mechanism inside this simulated rooftop overhead water tank. 
+          Watch the brushes spin, vacuum the sludge, and clarify the water!
+        </p>
+      </div>
+
+      <div class="simulator-box">
+        <div class="simulator-header">
+          <div>
+            <h3 class="comic-title" style="font-size: 1.5rem;">Overhead Water Tank Simulator</h3>
+            <p style="font-size: 0.9rem; color: var(--muted-text);">Press Deploy to launch Shweta's robotic crawler into the tank.</p>
+          </div>
+          <div class="tank-status-pill" id="simStatus" style="background: #FECACA; position: static;">
+            ⚠️ Dirty & Sludgy
+          </div>
+        </div>
+
+        <!-- Tank Visual Simulation Stage -->
+        <div class="tank-container">
+          <!-- Tank Water (Murky or Clean) -->
+          <div class="tank-water murky" id="simWater">
+            <!-- Wall Algae (Left & Right) -->
+            <div class="tank-algae-left" id="simAlgaeLeft"></div>
+            <div class="tank-algae-right" id="simAlgaeRight"></div>
+            
+            <!-- Bottom Sludge Layer -->
+            <div class="tank-sludge" id="simSludge"></div>
+          </div>
+
+          <!-- Animated Robot Device -->
+          <div class="sim-robot" id="simRobot">
+            <!-- Little Robot SVG -->
+            <svg width="70" height="50" viewBox="0 0 100 80" fill="none">
+              <!-- Antenna -->
+              <line x1="50" y1="20" x2="50" y2="0" stroke="#18181B" stroke-width="4"/>
+              <circle cx="50" cy="0" r="5" fill="#FF334B"/>
+              <!-- Body -->
+              <rect x="15" y="20" width="70" height="40" rx="10" fill="#FFDE00" stroke="#18181B" stroke-width="4"/>
+              <!-- Camera Lens -->
+              <circle cx="50" cy="40" r="10" fill="#00B4D8" stroke="#18181B" stroke-width="3"/>
+              <circle cx="53" cy="38" r="3" fill="#FFFFFF"/>
+              <!-- Rotating Brush Wheels -->
+              <rect x="5" y="55" width="22" height="15" rx="4" fill="#FF334B" stroke="#18181B" stroke-width="3"/>
+              <rect x="73" y="55" width="22" height="15" rx="4" fill="#FF334B" stroke="#18181B" stroke-width="3"/>
+            </svg>
+            <div class="brush-spinner brush-left"></div>
+            <div class="brush-spinner brush-right"></div>
+          </div>
+        </div>
+
+        <!-- Simulator Controls -->
+        <div class="sim-controls">
+          <button class="comic-btn btn-red" id="simDeployBtn">
+            <span>🚀 Deploy Robot</span>
+          </button>
+          <button class="comic-btn btn-white" id="simResetBtn">
+            <span>🔄 Reset Tank</span>
+          </button>
+          <span class="comic-badge" id="simProgress" style="font-size: 1rem; padding: 10px 18px;">0% Cleaned</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         ABOUT SHWETA & JECRC UNIVERSITY SECTION
+         ========================================== -->
+    <section class="section-wrapper" id="about">
+      <div class="section-header">
+        <span class="section-tag">👩‍🎓 Meet The Maker</span>
+        <h2 class="section-title">About Shweta</h2>
+        <p class="section-subtitle">
+          Engineering student, robotics enthusiast, problem solver, and Shinchan fan!
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <!-- Profile Card Left -->
+        <div class="about-card-left">
+          <div class="shweta-badge-tag">Future Roboticist & Entrepreneur</div>
+
+          <div class="about-avatar-wrapper">
+            <!-- Custom Shinchan-Style Student Illustration -->
+            <svg width="140" height="140" viewBox="0 0 100 100" fill="none">
+              <!-- Graduation Cap / Beret -->
+              <polygon points="50,12 85,26 50,38 15,26" fill="#18181B"/>
+              <line x1="80" y1="28" x2="84" y2="46" stroke="#FFDE00" stroke-width="3"/>
+              <circle cx="84" cy="48" r="4" fill="#FF334B"/>
+              <!-- Face -->
+              <path d="M25 45 C 20 70 30 85 50 85 C 70 85 80 70 75 45 Z" fill="#FFE0BD" stroke="#18181B" stroke-width="4"/>
+              <!-- Hair bang -->
+              <path d="M24 35 C 40 25 60 25 76 35 C 70 48 30 48 24 35 Z" fill="#4A2810"/>
+              <!-- Eyebrows -->
+              <path d="M32 46 Q 42 38 48 44" stroke="#18181B" stroke-width="4" stroke-linecap="round"/>
+              <path d="M54 44 Q 60 38 70 46" stroke="#18181B" stroke-width="4" stroke-linecap="round"/>
+              <!-- Eyes -->
+              <circle cx="40" cy="54" r="4" fill="#18181B"/>
+              <circle cx="62" cy="54" r="4" fill="#18181B"/>
+              <!-- Cheeks -->
+              <circle cx="30" cy="62" r="6" fill="#FF85A1" opacity="0.8"/>
+              <circle cx="72" cy="62" r="6" fill="#FF85A1" opacity="0.8"/>
+              <!-- Smile -->
+              <path d="M43 68 Q 51 76 59 68" stroke="#18181B" stroke-width="3" stroke-linecap="round" fill="none"/>
+              <!-- Student Collar & Red Outfit -->
+              <path d="M28 85 L 15 100 L 85 100 L 72 85 Z" fill="#FF334B" stroke="#18181B" stroke-width="4"/>
+              <polygon points="50,85 42,98 50,94 58,98" fill="#FFFFFF" stroke="#18181B" stroke-width="2"/>
+            </svg>
+          </div>
+
+          <h3 class="about-name">Shweta</h3>
+          <p class="about-role">B.Tech 1st Year Engineering Student</p>
+
+          <div class="university-pill">
+            <span>🏛️</span>
+            <span>JECRC University, Jaipur (2024–2028)</span>
+          </div>
+
+          <p style="font-size: 0.92rem; color: var(--muted-text); line-height: 1.5;">
+            "Bringing playful creativity and hard-hitting robotics engineering together to solve ground-level challenges."
+          </p>
+        </div>
+
+        <!-- Story & Skills Right -->
+        <div class="about-card-right">
+          <div class="about-story">
+            <h4 class="comic-title" style="font-size: 1.4rem; margin-bottom: 12px; color: var(--primary-red);">
+              🌟 My Journey & Philosophy
+            </h4>
+            <p style="margin-bottom: 12px;">
+              As a 1st year B.Tech student at <strong>JECRC University</strong>, I believe the greatest engineering projects don't come from sitting in quiet lecture halls—they come from observing the uncomfortable, messy problems people deal with every single week.
+            </p>
+            <p style="margin-bottom: 12px;">
+              Watching people dread overhead water tank cleaning or climb into cramped, moldy spaces made me realize: <em>why should a human ever have to risk their health for a task a robotic crawler can do ten times faster?</em>
+            </p>
+            <p>
+              I chose a <strong>Shinchan theme</strong> because Shinchan represents fearlessness, relentless curiosity, thinking completely out of the box, and never taking obstacles too seriously. That's the exact energy I bring to prototyping and startup innovation!
+            </p>
+          </div>
+
+          <div class="skills-deck">
+            <h4 class="skills-title">🚀 Core Skills & Toolkit</h4>
+            <div class="skills-pills">
+              <span class="skill-tag">🤖 Robotics Prototyping</span>
+              <span class="skill-tag">⚡ Arduino & Microcontrollers</span>
+              <span class="skill-tag">🐍 Python Programming</span>
+              <span class="skill-tag">💻 C / C++</span>
+              <span class="skill-tag">🌊 Submersible Mechanisms</span>
+              <span class="skill-tag">📡 IoT & Wireless Telemetry</span>
+              <span class="skill-tag">📐 CAD & Product Design</span>
+              <span class="skill-tag">🎯 Problem Identification & Pitching</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SHINCHAN FUN ZONE & EASTER EGGS
+         ========================================== -->
+    <section class="section-wrapper" id="funzone">
+      <div class="section-header">
+        <span class="section-tag">🖍️ Kasukabe Defense Force Corner</span>
+        <h2 class="section-title">Shinchan Fun Zone</h2>
+        <p class="section-subtitle">
+          Take a quick break with some iconic Shinchan humor and Action Kamen wisdom!
+        </p>
+      </div>
+
+      <div class="fun-zone">
+        <!-- Card 1: Action Kamen Wisdom -->
+        <div class="fun-card">
+          <div style="font-size: 3rem;">⚡</div>
+          <h4>Action Kamen Wisdom</h4>
+          <p id="shinchanQuoteText" style="min-height: 70px; font-style: italic;">
+            “Action Kamen says: Clean drinking water gives you maximum strength! Wahahaha! ⚡”
+          </p>
+          <button class="comic-btn btn-yellow" id="nextQuoteBtn" style="padding: 8px 16px; font-size: 0.9rem; margin-top: auto;">
+            Next Quote 💬
+          </button>
+        </div>
+
+        <!-- Card 2: Chocobi Snack Fuel -->
+        <div class="fun-card">
+          <div style="font-size: 3rem;">🍪</div>
+          <h4>Chocobi Fuel Counter</h4>
+          <p>
+            Engineering robotics requires tons of brainpower and crisp Chocobi snacks!
+          </p>
+          <div style="background: #FFE2E5; padding: 10px 16px; border-radius: 12px; border: var(--border-thin); font-family: var(--font-comic); font-weight: 700; color: var(--primary-red);">
+            🍪 42 Boxes Consumed During R&D
+          </div>
+        </div>
+
+        <!-- Card 3: Shiro's Stamp of Quality -->
+        <div class="fun-card">
+          <div style="font-size: 3rem;">🐶</div>
+          <h4>Shiro's Tank Inspection</h4>
+          <p>
+            Shiro inspects every water tank cleaned by the robot to guarantee 100% cleanliness and zero dirt!
+          </p>
+          <div style="background: #E0F2FE; padding: 10px 16px; border-radius: 12px; border: var(--border-thin); font-family: var(--font-comic); font-weight: 700; color: #0369A1;">
+            🐾 100% Wag-Approved Hygiene
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT & COLLABORATION SECTION
+         ========================================== -->
+    <section class="section-wrapper" id="contact">
+      <div class="section-header">
+        <span class="section-tag">📬 Let's Connect</span>
+        <h2 class="section-title">Get In Touch With Shweta</h2>
+        <p class="section-subtitle">
+          Interested in the tank cleaning robot startup, mentoring, funding, or engineering collaboration? Send a message!
+        </p>
+      </div>
+
+      <div class="contact-section">
+        <div class="contact-info-block">
+          <h3 class="comic-title" style="font-size: 1.8rem; color: var(--primary-red);">
+            Let's Build the Future of Clean Water 🚀
+          </h3>
+          <p style="color: var(--muted-text); font-size: 1.05rem;">
+            Whether you are an investor, mentor, fellow student at JECRC University, or someone who hates dirty water tanks, I'd love to chat!
           </p>
 
-          <div class="hero-stats">
-            <div class="stat-card">
-              <span class="stat-val">JECRC</span>
-              <span class="stat-lbl">Jaipur Campus</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-card">
-              <span class="stat-val">3-5%</span>
-              <span class="stat-lbl">Micro-Fee Model</span>
-            </div>
-            <div class="stat-divider"></div>
-            <div class="stat-card">
-              <span class="stat-val">100%</span>
-              <span class="stat-lbl">Verified Student Auth</span>
-            </div>
-          </div>
-
-          <div class="hero-cta-group">
-            <a href="#thriftloop" class="btn btn-primary">
-              <span>Explore ThriftLoop</span>
-              <i class="fa-solid fa-bolt"></i>
-            </a>
-            <a href="#interactive-demo" class="btn btn-secondary">
-              <span>Try Marketplace Demo</span>
-              <i class="fa-solid fa-arrow-down"></i>
-            </a>
-            <button class="btn btn-ghost" id="heroBotButton">
-              <i class="fa-solid fa-robot"></i>
-              <span>Talk to Botpress Assistant</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Hero Pikachu-themed Tech Card Mockup -->
-        <div class="hero-visual">
-          <div class="phone-mockup">
-            <div class="mockup-header">
-              <div class="mockup-avatar">
-                <span class="pika-cheeks"></span>
-                ⚡
-              </div>
-              <div class="mockup-title-box">
-                <span class="mock-app-name">ThriftLoop Campus</span>
-                <span class="mock-app-status">● Live @ JECRC Sitapura</span>
-              </div>
-              <div class="verified-tag">
-                <i class="fa-solid fa-shield-halved"></i> @jecrc.ac.in
-              </div>
-            </div>
-
-            <div class="mockup-body">
-              <!-- Live Card Banner -->
-              <div class="bundle-hero-card">
-                <div class="bundle-badge">⚡ SENIOR 1-TAP BUNDLE</div>
-                <h4>3rd Sem CSE Complete Kit</h4>
-                <p>Data Structures + Lab Coat + Scientific Drafter + Notes</p>
-                <div class="bundle-price-row">
-                  <span class="price-cut">₹2,800</span>
-                  <span class="price-deal">₹650</span>
-                  <span class="green-points-tag">+120 🍃 Green Points</span>
-                </div>
-              </div>
-
-              <!-- Mini items list -->
-              <div class="mock-mini-grid">
-                <div class="mock-item">
-                  <div class="mock-icon">👔</div>
-                  <div class="mock-meta">
-                    <strong>Placement Blazer</strong>
-                    <span class="rent-tag">Rent ₹99/day</span>
-                  </div>
-                </div>
-                <div class="mock-item">
-                  <div class="mock-icon">📐</div>
-                  <div class="mock-meta">
-                    <strong>ED Mini Drafter</strong>
-                    <span class="buy-tag">Buy ₹150</span>
-                  </div>
-                </div>
-                <div class="mock-item">
-                  <div class="mock-icon">🧮</div>
-                  <div class="mock-meta">
-                    <strong>Casio fx-991ES</strong>
-                    <span class="swap-tag">Swap or ₹450</span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Campus Cafe Partner Perk -->
-              <div class="mock-perk">
-                <i class="fa-solid fa-mug-hot text-yellow"></i>
-                <span>Redeem 50 Green Points for Canteen Cold Coffee!</span>
-              </div>
-            </div>
-
-            <div class="mockup-footer">
-              <div class="meetup-hint">
-                <i class="fa-solid fa-location-dot"></i> Safe Meetup: Central Library / Canteen
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Yuvika Jangid Section -->
-    <section class="about-section" id="about">
-      <div class="container">
-        <div class="section-badge">
-          <i class="fa-solid fa-user-graduate"></i>
-          <span>About The Creator</span>
-        </div>
-        <h2 class="section-title">Engineering Solutions for Real Campus Needs</h2>
-
-        <div class="about-grid">
-          <div class="about-card intro-card">
-            <div class="pika-ears-decor">
-              <span class="ear-left"></span>
-              <span class="ear-right"></span>
-            </div>
-            <div class="profile-header">
-              <div class="avatar-ring">
-                <div class="avatar-inner">
-                  <span class="pika-face">⚡</span>
-                </div>
-              </div>
+          <div class="contact-channels">
+            <div class="contact-channel-item">
+              <div class="contact-channel-icon">🏛️</div>
               <div>
-                <h3 class="profile-name">Yuvika Jangid</h3>
-                <p class="profile-role">B.Tech Student &bull; JECRC College, Jaipur</p>
-                <p class="profile-location"><i class="fa-solid fa-map-pin"></i> Jaipur, Rajasthan, India</p>
-              </div>
-            </div>
-            <p class="about-bio">
-              As an engineering undergrad at <strong>JECRC College Jaipur</strong>, I noticed a recurring cycle every semester: seniors discard expensive books, drawing instruments, and lab equipment, while juniors scramble to purchase brand-new items they will only use for 4 months.
-            </p>
-            <p class="about-bio">
-              I conceived <strong>ThriftLoop</strong> to transform our campus into a self-sustaining circular economy — built on verified trust, zero courier friction, instant senior-junior handovers, and rewarding green habits.
-            </p>
-          </div>
-
-          <div class="about-pillars">
-            <div class="pillar-box">
-              <div class="pillar-icon">🎓</div>
-              <h4>Campus-Centric Insight</h4>
-              <p>Designed natively for college workflows — semester handovers, placement season rentals, and intra-hostel exchanges.</p>
-            </div>
-            <div class="pillar-box">
-              <div class="pillar-icon">🌱</div>
-              <h4>Zero Waste Mission</h4>
-              <p>Transforming textbooks and stationery into perpetual campus assets that prevent landfill waste.</p>
-            </div>
-            <div class="pillar-box">
-              <div class="pillar-icon">🛡️</div>
-              <h4>Institutional Trust</h4>
-              <p>Eliminating OLX/FB marketplace scams through mandatory student domain authentication (<span class="code-pill">@jecrc.ac.in</span>).</p>
-            </div>
-            <div class="pillar-box">
-              <div class="pillar-icon">⚡</div>
-              <h4>Agile Problem Solver</h4>
-              <p>Combining frontend aesthetics, scalable backend models, and intuitive user experiences with high energy.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Flagship Project: ThriftLoop Deep Dive -->
-    <section class="thriftloop-section" id="thriftloop">
-      <div class="container">
-        <div class="section-badge">
-          <i class="fa-solid fa-recycle"></i>
-          <span>Flagship Innovation</span>
-        </div>
-        <h2 class="section-title">
-          "ThriftLoop" – The Campus-Only Resale & Swap App
-        </h2>
-        <p class="section-subtitle">
-          A closed-loop marketplace empowering university students to buy, sell, swap, and rent semester essentials safely within their own college.
-        </p>
-
-        <!-- Problem vs Solution Box -->
-        <div class="problem-solution-box">
-          <div class="ps-card problem-card">
-            <div class="ps-header">
-              <i class="fa-solid fa-triangle-exclamation"></i>
-              <h3>The Campus Problem</h3>
-            </div>
-            <ul class="ps-list">
-              <li>
-                <i class="fa-solid fa-xmark text-danger"></i>
-                <span><strong>Hefty Semester Expenses:</strong> Freshers spend ₹3,000–₹6,000 every semester on items needed for barely 120 days.</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-xmark text-danger"></i>
-                <span><strong>Massive Material Waste:</strong> Unsold books, lab coats, and drafters rot in hostel lockers or get dumped in trash.</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-xmark text-danger"></i>
-                <span><strong>Public Platform Risks:</strong> OLX and Facebook Marketplace attract strangers, require expensive couriers, and expose students to frauds.</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-xmark text-danger"></i>
-                <span><strong>One-Time Use Burden:</strong> Interview blazers and lab gear are purchased for single events at steep price tags.</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="ps-card solution-card">
-            <div class="ps-header">
-              <i class="fa-solid fa-lightbulb text-yellow"></i>
-              <h3>The ThriftLoop Solution</h3>
-            </div>
-            <ul class="ps-list">
-              <li>
-                <i class="fa-solid fa-check text-yellow"></i>
-                <span><strong>Hyperlocal Circularity:</strong> Only JECRC students allowed via verified college email login.</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-check text-yellow"></i>
-                <span><strong>Zero Delivery Fees:</strong> Safe, physical meetups right at the Central Library, Canteen, or Main Lawn.</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-check text-yellow"></i>
-                <span><strong>Smart Multi-Mode:</strong> Buy, Sell, Swap, or Rent based on specific academic timelines.</span>
-              </li>
-              <li>
-                <i class="fa-solid fa-check text-yellow"></i>
-                <span><strong>Green Gamification:</strong> Rewarding each circular exchange with Green Points redeemable for food and stationery.</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- 4 Unique Superpowers -->
-        <div class="features-wrapper" id="unique">
-          <h3 class="subsection-title">Why ThriftLoop Is Truly Unique</h3>
-          <div class="unique-grid">
-            
-            <!-- Unique Card 1 -->
-            <div class="feature-card">
-              <div class="feature-top">
-                <div class="feature-icon-badge">
-                  <i class="fa-solid fa-location-crosshairs"></i>
-                </div>
-                <span class="feature-num">01</span>
-              </div>
-              <h4>Hyperlocal: No Shipping, No Scams</h4>
-              <p>
-                Strictly confined to your campus territory. Meet comfortably at the college library or canteen. No strangers, no delivery charges, and zero packing hassles.
-              </p>
-              <div class="feature-perk">
-                <i class="fa-solid fa-shield-check"></i> 100% Verified College Email Login
+                <div style="font-size: 0.8rem; color: var(--muted-text);">Campus</div>
+                <div>JECRC University, Jaipur, Rajasthan</div>
               </div>
             </div>
 
-            <!-- Unique Card 2 -->
-            <div class="feature-card highlighted-feature">
-              <div class="feature-top">
-                <div class="feature-icon-badge">
-                  <i class="fa-solid fa-box-open"></i>
-                </div>
-                <span class="feature-num">02</span>
-              </div>
-              <h4>Semester Handover: 1-Tap Junior Bundles</h4>
-              <p>
-                Seniors don't have to list 10 different books one by one. In one tap, list the full <em>"Semester Survival Bundle"</em> (Textbooks + Handwritten Notes + Lab Kit + Drafter) for juniors.
-              </p>
-              <div class="feature-perk">
-                <i class="fa-solid fa-bolt"></i> Instant Handover in Exam Week
-              </div>
-            </div>
-
-            <!-- Unique Card 3 -->
-            <div class="feature-card">
-              <div class="feature-top">
-                <div class="feature-icon-badge">
-                  <i class="fa-solid fa-clock-rotate-left"></i>
-                </div>
-                <span class="feature-num">03</span>
-              </div>
-              <h4>Rent, Don't Buy: One-Time Utility Gear</h4>
-              <p>
-                Need a formal blazer for placement interviews, a scientific calculator for tomorrow's exam, or a camera/projector for the annual fest? Rent it from a batchmate for nominal day rates.
-              </p>
-              <div class="feature-perk">
-                <i class="fa-solid fa-hand-holding-dollar"></i> Huge Savings for Students
-              </div>
-            </div>
-
-            <!-- Unique Card 4 -->
-            <div class="feature-card">
-              <div class="feature-top">
-                <div class="feature-icon-badge">
-                  <i class="fa-solid fa-leaf"></i>
-                </div>
-                <span class="feature-num">04</span>
-              </div>
-              <h4>Green Points: Rewarding Eco-Action</h4>
-              <p>
-                Every single item reused earns Green Points. Accumulate points on your student dashboard and redeem them directly for hot snacks at the campus cafeteria or stationery prints.
-              </p>
-              <div class="feature-perk">
-                <i class="fa-solid fa-gift"></i> Redeemable at Campus Cafe & Shop
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Interactive Campus Hub / Simulator Section -->
-    <section class="simulator-section" id="interactive-demo">
-      <div class="container">
-        <div class="section-badge">
-          <i class="fa-solid fa-mobile-screen"></i>
-          <span>Interactive Prototype</span>
-        </div>
-        <h2 class="section-title">Experience the ThriftLoop Campus Market</h2>
-        <p class="section-subtitle">
-          Test drive how students at JECRC College browse, rent, calculate savings, and earn Green Points.
-        </p>
-
-        <!-- Filter Tabs -->
-        <div class="demo-tabs">
-          <button class="demo-tab-btn active" data-category="all">
-            <i class="fa-solid fa-grip"></i> All Listings
-          </button>
-          <button class="demo-tab-btn" data-category="bundle">
-            <i class="fa-solid fa-boxes-packing"></i> Senior Bundles
-          </button>
-          <button class="demo-tab-btn" data-category="rent">
-            <i class="fa-solid fa-vest"></i> Rent Blazers & Gear
-          </button>
-          <button class="demo-tab-btn" data-category="books">
-            <i class="fa-solid fa-book"></i> Textbooks & Notes
-          </button>
-          <button class="demo-tab-btn" data-category="lab">
-            <i class="fa-solid fa-flask"></i> Lab Kits & Drafters
-          </button>
-        </div>
-
-        <!-- Dynamic Listings Grid -->
-        <div class="listings-grid" id="listingsContainer">
-          <!-- Populated dynamically via script.js -->
-        </div>
-
-        <!-- Savings Calculator Box -->
-        <div class="calculator-card">
-          <div class="calc-header">
-            <div>
-              <span class="badge-tag">🌱 Sustainability & Wallet Impact</span>
-              <h3>JECRC Campus Savings Calculator</h3>
-              <p>Estimate how much a student saves and points earned using ThriftLoop instead of buying fresh.</p>
-            </div>
-            <div class="calc-icon">⚡</div>
-          </div>
-
-          <div class="calc-body">
-            <div class="calc-inputs">
-              <label for="semSelect">Select Your Engineering Semester:</label>
-              <select id="semSelect" class="styled-select">
-                <option value="1">1st Year - Basic Engineering & Physics/Chemistry Lab</option>
-                <option value="3" selected>2nd Year (3rd Sem) - Core Branch & DSA/Electronics</option>
-                <option value="5">3rd Year (5th Sem) - Advanced Labs & Mini-Projects</option>
-                <option value="7">4th Year (7th Sem) - Placement Drive Formals & Capstone</option>
-              </select>
-
-              <div class="checkbox-group">
-                <label class="custom-checkbox">
-                  <input type="checkbox" id="checkBooks" checked>
-                  <span>Core Textbooks & Question Banks</span>
-                </label>
-                <label class="custom-checkbox">
-                  <input type="checkbox" id="checkLab" checked>
-                  <span>Lab Coat + Drafter / Breadboard Kit</span>
-                </label>
-                <label class="custom-checkbox">
-                  <input type="checkbox" id="checkBlazer" checked>
-                  <span>Interview Blazer / Formal Suit (Rent instead of Buy)</span>
-                </label>
-              </div>
-            </div>
-
-            <div class="calc-results">
-              <div class="result-tile">
-                <span class="result-label">Retail Cost (Brand New)</span>
-                <span class="result-amount danger" id="retailCost">₹7,200</span>
-              </div>
-              <div class="result-tile">
-                <span class="result-label">ThriftLoop Campus Cost</span>
-                <span class="result-amount success" id="thriftCost">₹1,450</span>
-              </div>
-              <div class="result-tile highlight-tile">
-                <span class="result-label">Total Student Money Saved</span>
-                <span class="result-amount yellow" id="savedAmount">₹5,750</span>
-              </div>
-              <div class="result-tile eco-tile">
-                <span class="result-label">Eco Green Points Earned</span>
-                <span class="result-amount green" id="greenPoints">280 Points 🍃</span>
-                <span class="perk-note">~5 Free Canteen Snacks!</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Business & Revenue Model Section -->
-    <section class="revenue-section" id="business-model">
-      <div class="container">
-        <div class="section-badge">
-          <i class="fa-solid fa-chart-line"></i>
-          <span>Financial Viability</span>
-        </div>
-        <h2 class="section-title">Sustainable Business & Revenue Model</h2>
-        <p class="section-subtitle">
-          Designed for sustainable scale, campus adoption, and mutual value for students and local merchants.
-        </p>
-
-        <div class="revenue-grid">
-          <!-- Stream 1 -->
-          <div class="revenue-card">
-            <div class="rev-icon-box">
-              <i class="fa-solid fa-percent"></i>
-            </div>
-            <div class="rev-tag">Core Engine</div>
-            <h3>3% – 5% Transaction Commission</h3>
-            <p>
-              A modest transaction fee on successful equipment sales and peer-to-peer rentals (blazers, drafters, calculators) processed with buyer protection escrow.
-            </p>
-            <div class="rev-stat">
-              <span>Keeps transactions 90% cheaper than courier or marketplace alternatives.</span>
-            </div>
-          </div>
-
-          <!-- Stream 2 -->
-          <div class="revenue-card highlighted-rev">
-            <div class="rev-icon-box">
-              <i class="fa-solid fa-bullhorn"></i>
-            </div>
-            <div class="rev-tag">Local Commerce</div>
-            <h3>Sponsored Listings & Local Vendors</h3>
-            <p>
-              Local Sitapura & Jaipur student services — PG accommodations, coaching institutes, print/photocopy shops, and laptop repair hubs — pay for verified student-facing sponsored cards.
-            </p>
-            <div class="rev-stat">
-              <span>Targeted campus demographics with zero spam.</span>
-            </div>
-          </div>
-
-          <!-- Stream 3 -->
-          <div class="revenue-card">
-            <div class="rev-icon-box">
-              <i class="fa-solid fa-mug-saucer"></i>
-            </div>
-            <div class="rev-tag">Partnerships</div>
-            <h3>Campus Cafe & Stationery Partnerships</h3>
-            <p>
-              Strategic tie-ups with campus canteens and stationery stores to redeem earned Green Points. ThriftLoop collects lead generation and partnership fee margins on redeemed coupons.
-            </p>
-            <div class="rev-stat">
-              <span>Drives repeat footfall directly to campus vendors.</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Flow diagram card -->
-        <div class="workflow-card">
-          <h3 class="workflow-title">
-            <i class="fa-solid fa-network-wired text-yellow"></i>
-            How The ThriftLoop Campus Loop Works
-          </h3>
-          <div class="workflow-steps">
-            <div class="step-item">
-              <div class="step-circle">1</div>
-              <strong>Auth</strong>
-              <p>Login with verified JECRC domain (<span class="code-pill">@jecrc.ac.in</span>)</p>
-            </div>
-            <div class="step-arrow">➔</div>
-            <div class="step-item">
-              <div class="step-circle">2</div>
-              <strong>List / Bundle</strong>
-              <p>Seniors post items or 1-tap semester bundles</p>
-            </div>
-            <div class="step-arrow">➔</div>
-            <div class="step-item">
-              <div class="step-circle">3</div>
-              <strong>Meetup</strong>
-              <p>Instant handoff at library/canteen (no shipping)</p>
-            </div>
-            <div class="step-arrow">➔</div>
-            <div class="step-item">
-              <div class="step-circle">4</div>
-              <strong>Earn & Redeem</strong>
-              <p>Collect Green Points & redeem at campus shops</p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Botpress Assistant Spotlight -->
-    <section class="botpress-spotlight" id="chatbot-info">
-      <div class="container">
-        <div class="bot-card">
-          <div class="bot-badge">
-            <span class="pulsing-dot"></span>
-            <span>Botpress Cloud Chatbot Active</span>
-          </div>
-          <div class="bot-content-flex">
-            <div class="bot-text">
-              <h2>Need Instant Answers? Meet the AI Campus Assistant</h2>
-              <p>
-                Have questions regarding <strong>Yuvika Jangid</strong>, the technical architecture of <strong>ThriftLoop</strong>, the JECRC implementation, or how Green Points calculate?
-              </p>
-              <div class="bot-chips">
-                <button class="chip-btn" data-query="What is ThriftLoop?">"What is ThriftLoop?"</button>
-                <button class="chip-btn" data-query="Who is Yuvika Jangid?">"Tell me about Yuvika Jangid"</button>
-                <button class="chip-btn" data-query="How do Green Points work?">"How do Green Points work?"</button>
-                <button class="chip-btn" data-query="Why is it hyperlocal to JECRC?">"Why campus-only & hyperlocal?"</button>
-              </div>
-            </div>
-            <div class="bot-cta-column">
-              <button class="btn btn-primary btn-large" id="spotlightChatBtn">
-                <i class="fa-solid fa-bolt"></i>
-                <span>Open Botpress Chatbot</span>
-              </button>
-              <span class="bot-note">Look for the chat widget in the lower right corner ↘</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact & Connect Section -->
-    <section class="contact-section" id="contact">
-      <div class="container">
-        <div class="section-badge">
-          <i class="fa-solid fa-paper-plane"></i>
-          <span>Let's Build</span>
-        </div>
-        <h2 class="section-title">Connect with Yuvika Jangid</h2>
-        <p class="section-subtitle">
-          Interested in bringing ThriftLoop to your university, discussing engineering opportunities, or collaborating? Let's connect!
-        </p>
-
-        <div class="contact-grid">
-          <div class="contact-info-card">
-            <h3>Contact Information</h3>
-            <p>Always open to conversations about campus tech, software engineering, and circular economy startups.</p>
-
-            <div class="contact-item">
-              <div class="ci-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="contact-channel-item">
+              <div class="contact-channel-icon">🤖</div>
               <div>
-                <strong>Institution</strong>
-                <span>JECRC College (Jaipur Engineering College and Research Centre), Jaipur, Rajasthan</span>
+                <div style="font-size: 0.8rem; color: var(--muted-text);">AI Assistant</div>
+                <div>Click the Botpress Chatbot widget at the bottom right anytime!</div>
               </div>
             </div>
 
-            <div class="contact-item">
-              <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-channel-item">
+              <div class="contact-channel-icon">💡</div>
               <div>
-                <strong>Campus Email</strong>
-                <a href="mailto:yuvika.jangid@jecrc.ac.in" class="link-yellow">yuvika.jangid@jecrc.ac.in</a>
+                <div style="font-size: 0.8rem; color: var(--muted-text);">Project Focus</div>
+                <div>Overhead Water Tank Robotic Scrubber (Patent Pending)</div>
               </div>
             </div>
-
-            <div class="contact-item">
-              <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
-              <div>
-                <strong>Location</strong>
-                <span>Sitapura Industrial Area, Jaipur, Rajasthan 302022</span>
-              </div>
-            </div>
-
-            <div class="social-links-row">
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" class="social-circle" title="LinkedIn">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-              <a href="https://github.com" target="_blank" rel="noreferrer" class="social-circle" title="GitHub">
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <a href="mailto:yuvika.jangid@jecrc.ac.in" class="social-circle" title="Email">
-                <i class="fa-solid fa-envelope"></i>
-              </a>
-            </div>
-          </div>
-
-          <!-- Quick Message Form -->
-          <div class="contact-form-card">
-            <h3>Send a Message</h3>
-            <form id="connectForm">
-              <div class="form-group">
-                <label for="senderName">Your Name</label>
-                <input type="text" id="senderName" placeholder="e.g., Rohan Sharma (Senior at JECRC)" required>
-              </div>
-              <div class="form-group">
-                <label for="senderEmail">Your College Email</label>
-                <input type="email" id="senderEmail" placeholder="your.name@jecrc.ac.in" required>
-              </div>
-              <div class="form-group">
-                <label for="senderTopic">Topic</label>
-                <select id="senderTopic" class="styled-select">
-                  <option value="ThriftLoop Expansion">ThriftLoop Beta Access & Testing</option>
-                  <option value="Campus Partnership">Campus Cafe / Stationery Partnership</option>
-                  <option value="Engineering & Project">Technical Collaboration / Hackathons</option>
-                  <option value="General Connect">Say Hello / Coffee Chat</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="senderMessage">Message</label>
-                <textarea id="senderMessage" rows="4" placeholder="Share your thoughts, ideas, or questions..." required></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary btn-block">
-                <span>Send Message</span>
-                <i class="fa-solid fa-paper-plane"></i>
-              </button>
-              <div id="formStatus" class="form-status"></div>
-            </form>
           </div>
         </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="contactForm">
+          <h4 class="comic-title" style="font-size: 1.3rem;">Send Shweta a Direct Note ✍️</h4>
+
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="e.g. Action Kamen / Investor" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Your Email / Phone</label>
+            <input type="text" id="email" placeholder="e.g. hello@jecrc.ac.in" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message / Feedback</label>
+            <textarea id="message" rows="4" placeholder="Tell me your thoughts on the water tank cleaning robot idea..." required></textarea>
+          </div>
+
+          <button type="submit" class="comic-btn btn-red" style="width: 100%; margin-top: 5px;">
+            Send Message 🚀
+          </button>
+
+          <div id="formSuccessMsg" style="display: none; padding: 10px; background: #BBF7D0; border: var(--border-thin); border-radius: 10px; font-family: var(--font-comic); font-weight: 600; text-align: center; color: #166534;"></div>
+        </form>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-content">
-      <div class="footer-left">
-        <div class="footer-brand">
-          <span class="bolt-pika">⚡</span>
-          <strong>Yuvika Jangid</strong> &bull; B.Tech Portfolio & Innovation
-        </div>
-        <p class="footer-note">
-          Designed with Pikachu yellow & black electric aesthetics. Proudly student-built at JECRC College, Jaipur.
-        </p>
+  <!-- ==========================================
+       FLOATING BOTPRESS CHATBOT HELPER DOCK
+       ========================================== -->
+  <div class="botpress-dock-helper" id="botpressDockHelper">
+    <div class="botpress-speech-card" id="botpressSpeechCard">
+      <div class="botpress-speech-header">
+        <span>🤖 AI Chatbot Online!</span>
+        <button class="botpress-close-btn" id="botpressCloseBtn" title="Dismiss">✕</button>
       </div>
-      <div class="footer-right">
-        <span>© 2026 ThriftLoop. Campus Circular Economy.</span>
+      <div>
+        Hi! I'm Shweta's AI Botpress assistant. Ask me about the <strong>Tank Cleaning Robot</strong> or my studies at JECRC!
       </div>
+      <button class="botpress-trigger-btn" id="botpressTriggerBtn">Open Chat 💬</button>
     </div>
+  </div>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <p>© 2026 Shweta • B.Tech 1st Year @ JECRC University, Jaipur</p>
+    <p class="footer-quote">
+      "To protect the world from dirty water tanks — Kasukabe Defense Force, Assemble! 🛡️"
+    </p>
   </footer>
 
-  <!-- Scripts -->
-  <!-- External Script Link -->
-  <script src="./app.js" defer></script>
-  <script src="app.js" defer></script>
-
-  <!-- Production Inline Script Fallback (Guarded execution) -->
-  <script>
-(function() {
-  if (window.__YWI_APP_LOADED__) return;
-  window.__YWI_APP_LOADED__ = true;
-// ==========================================================================
-// Yuvika Jangid Portfolio & ThriftLoop Interactive Engine
-// ==========================================================================
-
-document.addEventListener('DOMContentLoaded', () => {
-  initMarketplaceDemo();
-  initSavingsCalculator();
-  initChatbotTriggers();
-  initMobileNav();
-  initContactForm();
-});
-
-// 1. ThriftLoop Campus Marketplace Demo Data
-const campusListings = [
-  {
-    id: 1,
-    title: "3rd Sem CSE Full Survival Bundle",
-    desc: "Complete bundle: DSA (Karumanchi) + Discrete Math + Handwritten Notes + Lab Manual.",
-    category: "bundle",
-    type: "Senior Bundle",
-    typeClass: "bundle",
-    currentPrice: 650,
-    origPrice: 2800,
-    seller: "Rahul Sharma (4th Yr CSE)",
-    greenPoints: 140,
-    icon: "📦"
-  },
-  {
-    id: 2,
-    title: "Raymond Slim Fit Interview Blazer (38R)",
-    desc: "Worn once for campus placement drive. Dry cleaned and ready for JECRC placement interviews.",
-    category: "rent",
-    type: "Rent ₹99/day",
-    typeClass: "rent",
-    currentPrice: 99,
-    origPrice: 4200,
-    seller: "Ananya Mehta (ECE Final Yr)",
-    greenPoints: 95,
-    icon: "👔"
-  },
-  {
-    id: 3,
-    title: "Engineering Drawing (ED) Mini-Drafter + Board",
-    desc: "Omega steel-arm mini drafter with clips and sheet container. Perfect for 1st Year Engineering Graphics.",
-    category: "lab",
-    type: "Buy / Swap",
-    typeClass: "buy",
-    currentPrice: 160,
-    origPrice: 750,
-    seller: "Kunal Jain (2nd Yr ME)",
-    greenPoints: 60,
-    icon: "📐"
-  },
-  {
-    id: 4,
-    title: "Higher Engineering Mathematics – B.S. Grewal",
-    desc: "Standard 44th Edition, neatly highlighted with JECRC Mid-Term & End-Term marked question banks.",
-    category: "books",
-    type: "Buy",
-    typeClass: "buy",
-    currentPrice: 290,
-    origPrice: 850,
-    seller: "Pooja Verma (3rd Yr IT)",
-    greenPoints: 50,
-    icon: "📚"
-  },
-  {
-    id: 5,
-    title: "Casio fx-991ES Plus Scientific Calculator",
-    desc: "Essential for RTU/JECRC semester exams. Clean screen, all matrix and complex equations functional.",
-    category: "rent",
-    type: "Rent ₹30/day",
-    typeClass: "rent",
-    currentPrice: 30,
-    origPrice: 1295,
-    seller: "Aditya S. (3rd Yr EE)",
-    greenPoints: 45,
-    icon: "🧮"
-  },
-  {
-    id: 6,
-    title: "Official JECRC Lab Coat + Goggles (Size M)",
-    desc: "Washed white laboratory coat + safety eyewear for Physics/Chemistry workshops. No chemical stains.",
-    category: "lab",
-    type: "Buy",
-    typeClass: "buy",
-    currentPrice: 120,
-    origPrice: 450,
-    seller: "Simran K. (2nd Yr AI-DS)",
-    greenPoints: 35,
-    icon: "🥼"
-  },
-  {
-    id: 7,
-    title: "1st Year Freshers Complete All-In-One Kit",
-    desc: "Workshop tools + ED Instruments + 4 Sem-1 Core Books + Verified Handwritten JECRC Topper Notes.",
-    category: "bundle",
-    type: "Senior Bundle",
-    typeClass: "bundle",
-    currentPrice: 890,
-    origPrice: 3900,
-    seller: "Vikas Choudhary (3rd Yr Civil)",
-    greenPoints: 210,
-    icon: "🎁"
-  },
-  {
-    id: 8,
-    title: "Formal Navy Blazer + Silk Tie Set (Size 40)",
-    desc: "Spotless dark blazer suitable for mock placement rounds, presentations, and TEDx events.",
-    category: "rent",
-    type: "Rent ₹120/day",
-    typeClass: "rent",
-    currentPrice: 120,
-    origPrice: 5000,
-    seller: "Tushar G. (4th Yr CSE)",
-    greenPoints: 110,
-    icon: "🧥"
-  }
-];
-
-function initMarketplaceDemo() {
-  const container = document.getElementById('listingsContainer');
-  const tabs = document.querySelectorAll('.demo-tab-btn');
-
-  function renderListings(filter = 'all') {
-    if (!container) return;
-    container.innerHTML = '';
-
-    const filtered = filter === 'all' 
-      ? campusListings 
-      : campusListings.filter(item => item.category === filter);
-
-    filtered.forEach(item => {
-      const card = document.createElement('div');
-      card.className = 'listing-card';
-      card.innerHTML = `
-        <div class="listing-head">
-          <span class="listing-category">${item.icon} ${item.category.toUpperCase()}</span>
-          <span class="type-badge ${item.typeClass}">${item.type}</span>
-        </div>
-        <h4 class="listing-title">${item.title}</h4>
-        <p class="listing-desc">${item.desc}</p>
-        <div class="listing-pricing">
-          <span class="curr-price">₹${item.currentPrice}</span>
-          <span class="origPrice">Orig: ₹${item.origPrice}</span>
-        </div>
-        <div class="listing-footer-row">
-          <span class="listing-seller"><i class="fa-solid fa-user-check"></i> ${item.seller}</span>
-          <span class="listing-green-tag">+${item.greenPoints} 🍃 Pts</span>
-        </div>
-        <button class="btn btn-secondary btn-block" style="margin-top: 10px; font-size: 0.82rem; padding: 8px 12px;" onclick="simulateHandshake('${item.title}', ${item.greenPoints})">
-          <i class="fa-solid fa-handshake-simple text-yellow"></i> 
-          <span>Meet at Canteen / Library</span>
-        </button>
-      `;
-      container.appendChild(card);
-    });
-  }
-
-  tabs.forEach(tab => {
-    tab.addEventListener('click', () => {
-      tabs.forEach(t => t.classList.remove('active'));
-      tab.classList.add('active');
-      const cat = tab.getAttribute('data-category');
-      renderListings(cat);
-    });
-  });
-
-  renderListings('all');
-}
-
-// Global function to trigger a friendly interaction modal/toast
-window.simulateHandshake = function(title, points) {
-  const toast = document.createElement('div');
-  toast.style.position = 'fixed';
-  toast.style.bottom = '90px';
-  toast.style.right = '25px';
-  toast.style.zIndex = '9999';
-  toast.style.background = '#1A1A22';
-  toast.style.border = '2px solid #FFE600';
-  toast.style.boxShadow = '0 10px 30px rgba(0,0,0,0.8), 0 0 25px rgba(255, 230, 0, 0.4)';
-  toast.style.padding = '16px 20px';
-  toast.style.borderRadius = '14px';
-  toast.style.color = '#FFFFFF';
-  toast.style.maxWidth = '360px';
-  toast.style.fontFamily = "'Plus Jakarta Sans', sans-serif";
-  toast.style.animation = 'fadeInUp 0.3s ease';
-
-  toast.innerHTML = `
-    <div style="display: flex; align-items: flex-start; gap: 12px;">
-      <span style="font-size: 1.8rem;">⚡</span>
-      <div>
-        <strong style="color: #FFE600; display: block; font-size: 0.95rem; margin-bottom: 4px;">Hyperlocal Request Sent!</strong>
-        <p style="font-size: 0.82rem; color: #A0A0B0; margin: 0 0 6px 0; line-height: 1.4;">
-          Listing: <strong>${title}</strong>
-        </p>
-        <span style="display: inline-block; background: rgba(16, 185, 129, 0.15); color: #10B981; padding: 2px 8px; border-radius: 99px; font-size: 0.75rem; font-weight: 700;">
-          +${points} Green Points reserved for JECRC Canteen!
-        </span>
-      </div>
-    </div>
-  `;
-
-  document.body.appendChild(toast);
-  setTimeout(() => {
-    toast.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-    toast.style.opacity = '0';
-    toast.style.transform = 'translateY(10px)';
-    setTimeout(() => toast.remove(), 400);
-  }, 4000);
-};
-
-// 2. JECRC Campus Savings & Green Points Calculator
-function initSavingsCalculator() {
-  const semSelect = document.getElementById('semSelect');
-  const checkBooks = document.getElementById('checkBooks');
-  const checkLab = document.getElementById('checkLab');
-  const checkBlazer = document.getElementById('checkBlazer');
-
-  const retailCostEl = document.getElementById('retailCost');
-  const thriftCostEl = document.getElementById('thriftCost');
-  const savedAmountEl = document.getElementById('savedAmount');
-  const greenPointsEl = document.getElementById('greenPoints');
-
-  function calculate() {
-    let retail = 0;
-    let thrift = 0;
-    let points = 0;
-
-    const semMultiplier = parseInt(semSelect.value, 10) >= 5 ? 1.2 : 1.0;
-
-    if (checkBooks.checked) {
-      retail += Math.round(3200 * semMultiplier);
-      thrift += Math.round(750 * semMultiplier);
-      points += 120;
-    }
-
-    if (checkLab.checked) {
-      retail += Math.round(1800 * semMultiplier);
-      thrift += Math.round(350 * semMultiplier);
-      points += 70;
-    }
-
-    if (checkBlazer.checked) {
-      // Retail cost of blazer is high (₹4,500), but ThriftLoop rent is just ₹150 for 2 days
-      retail += 4500;
-      thrift += 180;
-      points += 110;
-    }
-
-    const saved = Math.max(0, retail - thrift);
-
-    if (retailCostEl) retailCostEl.textContent = `₹${retail.toLocaleString('en-IN')}`;
-    if (thriftCostEl) thriftCostEl.textContent = `₹${thrift.toLocaleString('en-IN')}`;
-    if (savedAmountEl) savedAmountEl.textContent = `₹${saved.toLocaleString('en-IN')}`;
-    if (greenPointsEl) greenPointsEl.textContent = `${points} Points 🍃`;
-  }
-
-  [semSelect, checkBooks, checkLab, checkBlazer].forEach(el => {
-    if (el) el.addEventListener('change', calculate);
-  });
-
-  calculate();
-}
-
-// 3. Botpress Webchat Trigger & Quick Prompts
-function initChatbotTriggers() {
-  const openChatbotBtn = document.getElementById('openChatbotBtn');
-  const heroBotButton = document.getElementById('heroBotButton');
-  const spotlightChatBtn = document.getElementById('spotlightChatBtn');
-  const chipButtons = document.querySelectorAll('.chip-btn');
-
-  function triggerBotpressOpen(suggestedMessage = '') {
-    // Attempt standard Botpress webchat API
-    let opened = false;
-    try {
-      if (window.botpress && typeof window.botpress.open === 'function') {
-        window.botpress.open();
-        opened = true;
-      } else if (window.botpressWebChat && typeof window.botpressWebChat.send === 'function') {
-        window.botpressWebChat.send({ type: 'show' });
-        opened = true;
-      }
-    } catch (e) {
-      console.warn("Botpress webchat API direct open attempt:", e);
-    }
-
-    // Try finding Botpress iframe or trigger element in DOM
-    const bpContainer = document.querySelector('#bp-web-widget-container') || 
-                        document.querySelector('.bpw-widget-btn') || 
-                        document.querySelector('iframe[id*="botpress"]') ||
-                        document.querySelector('[id*="webchat"]');
-    if (bpContainer) {
-      bpContainer.click();
-      opened = true;
-    }
-
-    // Provide immediate visual feedback if user clicked
-    if (suggestedMessage) {
-      window.simulateHandshake(`Prompt: "${suggestedMessage}"`, 25);
-    }
-  }
-
-  if (openChatbotBtn) openChatbotBtn.addEventListener('click', () => triggerBotpressOpen());
-  if (heroBotButton) heroBotButton.addEventListener('click', () => triggerBotpressOpen());
-  if (spotlightChatBtn) spotlightChatBtn.addEventListener('click', () => triggerBotpressOpen());
-
-  chipButtons.forEach(chip => {
-    chip.addEventListener('click', () => {
-      const q = chip.getAttribute('data-query');
-      triggerBotpressOpen(q);
-    });
-  });
-}
-
-// 4. Mobile Navigation Toggle
-function initMobileNav() {
-  const toggle = document.getElementById('mobileToggle');
-  const navMenu = document.getElementById('navMenu');
-
-  if (toggle && navMenu) {
-    toggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-    });
-
-    document.querySelectorAll('.nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-      });
-    });
-  }
-}
-
-// 5. Contact Form Simulation
-function initContactForm() {
-  const form = document.getElementById('connectForm');
-  const status = document.getElementById('formStatus');
-
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const name = document.getElementById('senderName').value;
-      const email = document.getElementById('senderEmail').value;
-      const topic = document.getElementById('senderTopic').value;
-
-      if (status) {
-        status.className = 'form-status success';
-        status.innerHTML = `
-          ⚡ Thank you <strong>${name}</strong>! Your note regarding <strong>${topic}</strong> has been routed to Yuvika Jangid. Verified confirmation sent to <em>${email}</em>!
-        `;
-        status.style.display = 'block';
-        form.reset();
-      }
-    });
-  }
-}
-
-})();
-  </script>
+  <!-- Portfolio Logic Script -->
+  <script src="script.js"></script>
 </body>
 </html>
